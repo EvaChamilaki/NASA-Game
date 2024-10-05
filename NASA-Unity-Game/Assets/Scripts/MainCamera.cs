@@ -253,4 +253,9 @@ public class MainCamera : MonoBehaviour
         selectedField.GetComponent<Field>().WriteDiscovery((short)toolIndex);
         FillUI();
     }
+
+    public bool FieldIsSelected()
+    {
+        return (selectedField != null);
+    }
 }

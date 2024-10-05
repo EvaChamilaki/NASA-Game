@@ -13,6 +13,9 @@ public class ScientificInstrument : MonoBehaviour
 
     public void Clicked()
     {
+        if (!mainCamera.GetComponent<MainCamera>().FieldIsSelected())
+            return;
+
         moving = true;
     }    
 
