@@ -1061,6 +1061,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346430179}
   m_CullTransparentMesh: 1
+--- !u!1 &352025620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352025621}
+  - component: {fileID: 352025623}
+  - component: {fileID: 352025622}
+  m_Layer: 5
+  m_Name: Crop Requirements
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &352025621
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352025620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1048154600}
+  m_Father: {fileID: 1098744339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: -179}
+  m_SizeDelta: {x: 445.5255, y: 266.148}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &352025622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352025620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.10669278, g: 0.509434, b: 0.12587403, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &352025623
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352025620}
+  m_CullTransparentMesh: 1
 --- !u!1 &495629945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,6 +1547,7 @@ GameObject:
   - component: {fileID: 546457074}
   - component: {fileID: 546457076}
   - component: {fileID: 546457075}
+  - component: {fileID: 546457077}
   m_Layer: 5
   m_Name: Wheat
   m_TagString: Untagged
@@ -1594,6 +1671,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546457073}
   m_CullTransparentMesh: 1
+--- !u!114 &546457077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546457073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &553286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,6 +3133,7 @@ GameObject:
   - component: {fileID: 886835686}
   - component: {fileID: 886835688}
   - component: {fileID: 886835687}
+  - component: {fileID: 886835689}
   m_Layer: 5
   m_Name: Soybeans
   m_TagString: Untagged
@@ -3146,6 +3257,173 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886835685}
   m_CullTransparentMesh: 1
+--- !u!114 &886835689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886835685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
+--- !u!1 &1048154599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048154600}
+  - component: {fileID: 1048154602}
+  - component: {fileID: 1048154601}
+  m_Layer: 5
+  m_Name: Info Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1048154600
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048154599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 352025621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -113, y: 98}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1048154601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048154599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -222.78125, w: -193.75}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1048154602
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048154599}
+  m_CullTransparentMesh: 1
 --- !u!1 &1076257383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,6 +3435,7 @@ GameObject:
   - component: {fileID: 1076257384}
   - component: {fileID: 1076257386}
   - component: {fileID: 1076257385}
+  - component: {fileID: 1076257387}
   m_Layer: 5
   m_Name: Pumpkins
   m_TagString: Untagged
@@ -3280,6 +3559,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076257383}
   m_CullTransparentMesh: 1
+--- !u!114 &1076257387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076257383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &1098744335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3604,7 @@ GameObject:
   - component: {fileID: 1098744338}
   - component: {fileID: 1098744337}
   - component: {fileID: 1098744336}
+  - component: {fileID: 1098744340}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3378,6 +3691,7 @@ RectTransform:
   - {fileID: 1957140246}
   - {fileID: 346430180}
   - {fileID: 1329832452}
+  - {fileID: 352025621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3385,6 +3699,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1098744340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098744335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950a7fe12e121bd48bfb82a4b8a2e2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: {fileID: 1048154601}
+  infoPanel: {fileID: 352025621}
 --- !u!1 &1099679709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3986,6 +4314,7 @@ GameObject:
   - component: {fileID: 1267389320}
   - component: {fileID: 1267389322}
   - component: {fileID: 1267389321}
+  - component: {fileID: 1267389323}
   m_Layer: 5
   m_Name: Carrot
   m_TagString: Untagged
@@ -4109,6 +4438,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267389319}
   m_CullTransparentMesh: 1
+--- !u!114 &1267389323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267389319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1001 &1283984137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4451,6 +4813,7 @@ GameObject:
   - component: {fileID: 1406415031}
   - component: {fileID: 1406415033}
   - component: {fileID: 1406415032}
+  - component: {fileID: 1406415034}
   m_Layer: 5
   m_Name: Barley
   m_TagString: Untagged
@@ -4574,6 +4937,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406415030}
   m_CullTransparentMesh: 1
+--- !u!114 &1406415034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406415030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &1484173078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,6 +5303,7 @@ GameObject:
   - component: {fileID: 1563268271}
   - component: {fileID: 1563268273}
   - component: {fileID: 1563268272}
+  - component: {fileID: 1563268274}
   m_Layer: 5
   m_Name: Lettuce
   m_TagString: Untagged
@@ -5030,6 +5427,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563268270}
   m_CullTransparentMesh: 1
+--- !u!114 &1563268274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563268270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &1639308358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,6 +5605,7 @@ GameObject:
   - component: {fileID: 1651327154}
   - component: {fileID: 1651327156}
   - component: {fileID: 1651327155}
+  - component: {fileID: 1651327157}
   m_Layer: 5
   m_Name: Corn
   m_TagString: Untagged
@@ -5298,6 +5729,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651327153}
   m_CullTransparentMesh: 1
+--- !u!114 &1651327157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651327153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &1691290325
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +6354,7 @@ GameObject:
   - component: {fileID: 1994653816}
   - component: {fileID: 1994653818}
   - component: {fileID: 1994653817}
+  - component: {fileID: 1994653819}
   m_Layer: 5
   m_Name: Sugarcane
   m_TagString: Untagged
@@ -6013,6 +6478,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994653815}
   m_CullTransparentMesh: 1
+--- !u!114 &1994653819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994653815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1001 &2000073720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6101,6 +6599,7 @@ GameObject:
   - component: {fileID: 2107717100}
   - component: {fileID: 2107717102}
   - component: {fileID: 2107717101}
+  - component: {fileID: 2107717103}
   m_Layer: 5
   m_Name: Rice
   m_TagString: Untagged
@@ -6224,6 +6723,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107717099}
   m_CullTransparentMesh: 1
+--- !u!114 &2107717103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107717099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minpH: 5
+  maxpH: 10
+  drainage: 0
+  minNitrogen: 0
+  maxNitrogen: 0
+  minPotassium: 0
+  maxPotassium: 0
+  minPhosphorus: 0
+  maxPhosphorus: 0
+  minZinc: 0
+  maxZinc: 0
+  minSulfur: 0
+  maxSulfur: 0
+  minManganese: 0
+  maxManganese: 0
+  minBoron: 0
+  maxBoron: 0
+  minIron: 0
+  maxIron: 0
+  minOrganicHorizonThick: 0
+  maxOrganicHorizonThick: 0
 --- !u!1 &2134281526
 GameObject:
   m_ObjectHideFlags: 0
