@@ -18,6 +18,7 @@ public class MainCamera : MonoBehaviour
     [Header("Input sensitivities")]
     public float panSensitivity = 1.0f;
     public float zoomSensitivity = 1.0f;
+    public float rotSensitivity = 50.0f;
 
     [Header("Movement constraints")]
     public float panLimitX = 5.0f;
@@ -60,21 +61,13 @@ public class MainCamera : MonoBehaviour
             rightMouseDown = false;
 
         // Input handling for rotation
-        newRot = new Vector3(Input.GetAxis("Mouse X") * dt * 20.0f,
-            0.0f, 0.0f);
-        
+        if (rightMouseDown)
+        {
+            newRot = new Vector3(Math.Clamp(Input.mousePosition.y - prevMousePos, -1.0f, 1.0f) * dt * rotSensitivity,
+                0.0f, 0.0f);
 
-        //mainCam.transform.Rotate(newRot);
-        //if (mainCam.transform.rotation.eulerAngles.x >= rotLimitHigh)
-        //{
-        //    mainCam.transform.Rotate(-newRot);
-        //    mainCam.transform.Rotate(rotLimitHigh, 0.0f, 0.0f);
-        //}
-        //else if (mainCam.transform.rotation.eulerAngles.x <= rotLimitLow)
-        //{
-        //    mainCam.transform.Rotate(-newRot);
-        //    mainCam.transform.Rotate(rotLimitLow, 0.0f, 0.0f);
-        //}
+            mainCam.transform.Rotate(newRot);
+        }
 
         // Input handling for panning
         Vector3 newPos = mainCam.transform.position;
@@ -131,6 +124,6 @@ public class MainCamera : MonoBehaviour
 
         mainCam.transform.position = newPos;
 
-        prevMousePos = Input.GetAxis("Horizontal");
+        prevMousePos = Input.mousePosition.y;
     }
 }
