@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -38,6 +39,7 @@ public class Field : MonoBehaviour
     public float cadmium = 0.0f;
 
     [Header("Tool factors")]
+    public float pHBoost = 1.0f;
     public float nitrogenBoost = 5.0f;  
     public float potassiumBoost = 5.0f; 
     public float phosphorusBoost = 5.0f;
@@ -57,15 +59,44 @@ public class Field : MonoBehaviour
     private GameObject plantedCrop = null;
     private bool correntPlanting = false;
 
+    private float pHInitial = 5.0f;
+    private Drainage drainageInitial = Drainage.CLAY_SOIL;
+    private float nitrogenInitial = 0.0f;
+    private float potassiumInitial = 0.0f;
+    private float phosphorusInitial = 0.0f;
+    private float zincInitial = 0.0f;     
+    private float sulfurInitial = 0.0f;   
+    private float manganeseInitial = 0.0f;
+    private float boronInitial = 0.0f;    
+    private float ironInitial = 0.0f;     
+    private float organicHorizonThickInitial = 0.0f;
+    private float leadInitial = 0.0f;
+    private float arsenicInitial = 0.0f;
+    private float cadmiumInitial = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
         if (fieldIndex == -1)
             Debug.LogError("ERROR::field index not set!");
 
-        // Calculate puzzle status on solution
-        //discoveries = (short)(Mathf.Pow(2, 4) - 1);
-    }
+        pHInitial = pH;
+        drainageInitial = drainage;
+        nitrogenInitial = nitrogen;
+        potassiumInitial = potassium;
+        phosphorusInitial = phosphorus;
+        zincInitial = zinc;
+        sulfurInitial = sulfur;
+        manganeseInitial = manganese;
+        boronInitial = boron;
+        ironInitial = iron;
+        organicHorizonThickInitial = organicHorizonThick;
+        leadInitial = lead;
+        arsenicInitial = arsenic;
+        cadmiumInitial = cadmium;
+
+    //discoveries = (short)(Mathf.Pow(2, 4) - 1);
+}
 
     // Update is called once per frame
     void Update()
@@ -144,6 +175,21 @@ public class Field : MonoBehaviour
     {
         plantedCrop = null;
         correntPlanting = false;
+
+        pH = pHInitial;
+        drainage = drainageInitial;
+        nitrogen = nitrogenInitial;
+        potassium = potassiumInitial;
+        phosphorus = phosphorusInitial;
+        zinc = zincInitial;
+        sulfur = sulfurInitial;
+        manganese = manganeseInitial;
+        boron = boronInitial;
+        iron = ironInitial;
+        organicHorizonThick = organicHorizonThickInitial;
+        lead = leadInitial;
+        arsenic = arsenicInitial;
+        cadmium = cadmiumInitial;
     }
 
     public void Select()
@@ -197,6 +243,36 @@ public class Field : MonoBehaviour
 
             case 6:
                 iron += ironBoost;
+                break;
+            
+            case 7:
+                if (drainage == Drainage.CLAY_SOIL)
+                    drainage = Drainage.WELL_DRAINED;
+                else if (drainage == Drainage.WELL_DRAINED)
+                    drainage = Drainage.SANDY_SOIL;
+                else if (drainage == Drainage.SANDY_SOIL)
+                    drainage = Drainage.SILT_SOIL;
+                else if (drainage == Drainage.SILT_SOIL)
+                    drainage = Drainage.CLAY_SOIL;
+                break;
+
+            case 8:
+                if (drainage == Drainage.CLAY_SOIL)
+                    drainage = Drainage.SILT_SOIL;
+                else if (drainage == Drainage.SILT_SOIL)
+                    drainage = Drainage.SANDY_SOIL;
+                else if (drainage == Drainage.SANDY_SOIL)
+                    drainage = Drainage.WELL_DRAINED;
+                else if (drainage == Drainage.WELL_DRAINED)
+                    drainage = Drainage.CLAY_SOIL;
+                break;
+
+            case 9:
+                pH = Math.Min(pH + pHBoost, 14);    // pH can be greater than 14, but doesn't matter in our usecase. Don't shoot me NASA!
+                break;
+
+            case 10:
+                pH = Math.Max(pH - pHBoost, 0);     // pH can be less than 0, but doesn't matter in our usecase. Don't shoot me NASA!
                 break;
 
             default:

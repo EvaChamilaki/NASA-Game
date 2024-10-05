@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53bcb438bc5f43a45a5cc5977e830389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolIndex: 6
+  toolIndex: 9
 --- !u!114 &127809816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,6 +1004,7 @@ MonoBehaviour:
   lead: 26
   arsenic: 97
   cadmium: 7
+  pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
   phosphorusBoost: 5
@@ -1549,7 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53bcb438bc5f43a45a5cc5977e830389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolIndex: 6
+  toolIndex: 9
 --- !u!114 &227313093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4175,6 +4176,7 @@ MonoBehaviour:
   lead: 6
   arsenic: 97
   cadmium: 8
+  pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
   phosphorusBoost: 5
@@ -4756,7 +4758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53bcb438bc5f43a45a5cc5977e830389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolIndex: 6
+  toolIndex: 8
 --- !u!114 &1039370688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5607,7 +5609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53bcb438bc5f43a45a5cc5977e830389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolIndex: 6
+  toolIndex: 7
 --- !u!114 &1133720347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5699,6 +5701,7 @@ MonoBehaviour:
   lead: 11
   arsenic: 23
   cadmium: 12
+  pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
   phosphorusBoost: 5
@@ -7716,6 +7719,7 @@ MonoBehaviour:
   lead: 11
   arsenic: 22
   cadmium: 55
+  pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
   phosphorusBoost: 5
