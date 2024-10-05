@@ -27,7 +27,7 @@ public class Field : MonoBehaviour
     public float boron = 0.0f;          // fertilizer
     public float iron = 0.0f;           // fertilizer
     // cm
-    public float organic_horizon_thick = 0.0f;  // const
+    public float organicHorizonThick = 0.0f;  // const
     // Toxic (magic removal)
     public float lead = 0.0f;
     public float arsenic = 0.0f;
