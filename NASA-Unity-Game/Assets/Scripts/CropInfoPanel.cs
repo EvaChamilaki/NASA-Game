@@ -35,7 +35,7 @@ public class CropInfoPanel : MonoBehaviour
         infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth, cropInfo.preferredHeight);
 
         infoPanel.gameObject.SetActive(true);
-        infoPanel.transform.position = new Vector2(mousePos.x + infoPanel.sizeDelta.x * 2, mousePos.y);
+        infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y+ infoPanel.sizeDelta.y);
     }
 
     private void HideInfo()
