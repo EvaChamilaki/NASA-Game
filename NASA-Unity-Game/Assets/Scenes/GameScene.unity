@@ -564,20 +564,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 1
-  pH: 5
-  drainage: 0
-  nitrogen: 0
-  potassium: 0
-  phosphorus: 0
-  zinc: 0
-  sulfur: 0
-  manganese: 0
-  boron: 0
-  iron: 0
-  organicHorizonThick: 0
-  lead: 0
-  arsenic: 0
-  cadmium: 0
+  pH: 9
+  drainage: 2
+  nitrogen: 2
+  potassium: 36
+  phosphorus: 78
+  zinc: 9
+  sulfur: 72
+  manganese: 23
+  boron: 21
+  iron: 369
+  organicHorizonThick: 29
+  lead: 26
+  arsenic: 97
+  cadmium: 7
   selected: 0
 --- !u!1 &507714512
 GameObject:
@@ -1310,19 +1310,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fieldIndex: 2
   pH: 8
-  drainage: 0
-  nitrogen: 0
-  potassium: 0
-  phosphorus: 0
-  zinc: 0
-  sulfur: 0
-  manganese: 0
-  boron: 0
-  iron: 0
-  organicHorizonThick: 0
-  lead: 0
-  arsenic: 0
-  cadmium: 0
+  drainage: 3
+  nitrogen: 1
+  potassium: 4
+  phosphorus: 5
+  zinc: 8
+  sulfur: 9
+  manganese: 3
+  boron: 2
+  iron: 7
+  organicHorizonThick: 5
+  lead: 6
+  arsenic: 97
+  cadmium: 8
   selected: 0
 --- !u!1 &1098744335
 GameObject:
@@ -1600,19 +1600,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fieldIndex: 0
   pH: 5
-  drainage: 0
-  nitrogen: 0
-  potassium: 0
-  phosphorus: 0
-  zinc: 0
-  sulfur: 0
-  manganese: 0
-  boron: 0
-  iron: 0
-  organicHorizonThick: 0
-  lead: 0
-  arsenic: 0
-  cadmium: 0
+  drainage: 1
+  nitrogen: 5
+  potassium: 7
+  phosphorus: 6
+  zinc: 8
+  sulfur: 9
+  manganese: 6
+  boron: 2
+  iron: 1
+  organicHorizonThick: 25
+  lead: 11
+  arsenic: 23
+  cadmium: 12
   selected: 0
 --- !u!1 &1148427503
 GameObject:
@@ -2303,20 +2303,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 3
-  pH: 5
+  pH: 4
   drainage: 0
-  nitrogen: 0
-  potassium: 0
-  phosphorus: 0
-  zinc: 0
-  sulfur: 0
-  manganese: 0
-  boron: 0
-  iron: 0
-  organicHorizonThick: 0
-  lead: 0
-  arsenic: 0
-  cadmium: 0
+  nitrogen: 6
+  potassium: 6
+  phosphorus: 7
+  zinc: 8
+  sulfur: 9
+  manganese: 7
+  boron: 7
+  iron: 8
+  organicHorizonThick: 9
+  lead: 11
+  arsenic: 22
+  cadmium: 55
   selected: 0
 --- !u!1 &1691290325
 GameObject:

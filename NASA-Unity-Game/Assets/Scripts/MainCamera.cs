@@ -188,7 +188,7 @@ public class MainCamera : MonoBehaviour
 
     private void FillUI()
     {
-        pHText.text = "pH:" + selectedField.GetComponent<Field>().pH + " ";
+        pHText.text = "pH:" + selectedField.GetComponent<Field>().pH;
 
         if (selectedField.GetComponent<Field>().drainage == Drainage.CLAY_SOIL)
             drainageText.text = "Drainage: Clay soil";
@@ -199,18 +199,18 @@ public class MainCamera : MonoBehaviour
         else if (selectedField.GetComponent<Field>().drainage == Drainage.SILT_SOIL)
             drainageText.text = "Drainage: Silt soil";
 
-        nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen;
-        potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium;
-        phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus;
-        zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc;
-        sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur;
-        manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese;
-        boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron;
-        ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron;
-        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick;
-        leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead;
-        arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic;
-        cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium;
+        nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen + " kg/ha";
+        potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium + " kg/ha";
+        phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus + " kg/ha";
+        zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc + " mg/kg";
+        sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur + " mg/kg";
+        manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese + " mg/kg";
+        boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron + " mg/kg";
+        ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron + " mg/kg";
+        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick + " cm";
+        leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead + " mg/kg";
+        arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
+        cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
 
         canvas.SetActive(true);
     }
