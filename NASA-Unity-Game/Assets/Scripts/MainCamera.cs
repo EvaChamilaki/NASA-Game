@@ -189,32 +189,57 @@ public class MainCamera : MonoBehaviour
     private void FillUI()
     {
         if (selectedField.GetComponent<Field>().ReadDiscovery(0) == 1)
-            // TODO:
+            pHText.text = "pH:" + selectedField.GetComponent<Field>().pH;
+        else
+            pHText.text = "pH: ???";
 
-        pHText.text = "pH:" + selectedField.GetComponent<Field>().pH;
+        if (selectedField.GetComponent<Field>().ReadDiscovery(1) == 1)
+        {
+            if (selectedField.GetComponent<Field>().drainage == Drainage.CLAY_SOIL)
+                drainageText.text = "Drainage: Clay soil";
+            else if (selectedField.GetComponent<Field>().drainage == Drainage.WELL_DRAINED)
+                drainageText.text = "Drainage: Well drained";
+            else if (selectedField.GetComponent<Field>().drainage == Drainage.SANDY_SOIL)
+                drainageText.text = "Drainage: Sandy soil";
+            else if (selectedField.GetComponent<Field>().drainage == Drainage.SILT_SOIL)
+                drainageText.text = "Drainage: Silt soil";
+        }
+        else
+            drainageText.text = "Drainage: ???";
 
-        if (selectedField.GetComponent<Field>().drainage == Drainage.CLAY_SOIL)
-            drainageText.text = "Drainage: Clay soil";
-        else if (selectedField.GetComponent<Field>().drainage == Drainage.WELL_DRAINED)
-            drainageText.text = "Drainage: Well drained";
-        else if (selectedField.GetComponent<Field>().drainage == Drainage.SANDY_SOIL)
-            drainageText.text = "Drainage: Sandy soil";
-        else if (selectedField.GetComponent<Field>().drainage == Drainage.SILT_SOIL)
-            drainageText.text = "Drainage: Silt soil";
+        if (selectedField.GetComponent<Field>().ReadDiscovery(2) == 1)
+        {
+            nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen + " kg/ha";
+            potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium + " kg/ha";
+            phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus + " kg/ha";
+            zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc + " mg/kg";
+            sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur + " mg/kg";
+            manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese + " mg/kg";
+            boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron + " mg/kg";
+            ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron + " mg/kg";
+            leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead + " mg/kg";
+            arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
+            cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
+        }
+        else
+        {
+            nitrogenText.text = "Nitrogen: ???";
+            potassiumText.text = "Potassium: ???";
+            phosphorusText.text = "Phosphorus: ???";
+            zincText.text = "Zinc: ???";
+            sulfurText.text = "Sulfur: ???";
+            manganeseText.text = "Manganese: ???";
+            boronText.text = "Boron: ???";
+            ironText.text = "Iron: ???";
+            leadText.text = "Lead: ???";
+            arsenicText.text = "Arsenic: ???";
+            cadmiumText.text = "Cadmium: ???";
+        }
 
-        nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen + " kg/ha";
-        potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium + " kg/ha";
-        phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus + " kg/ha";
-        zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc + " mg/kg";
-        sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur + " mg/kg";
-        manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese + " mg/kg";
-        boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron + " mg/kg";
-        ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron + " mg/kg";
-        leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead + " mg/kg";
-        arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
-        cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
-
-        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick + " cm";
+        if (selectedField.GetComponent<Field>().ReadDiscovery(3) == 1)
+            organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick + " cm";
+        else
+            organicHorizonThickText.text = "O Horizon thickness: ???";
 
         canvas.SetActive(true);
     }

@@ -49,7 +49,7 @@ public class Field : MonoBehaviour
             Debug.LogError("ERROR::field index not set!");
 
         // Calculate puzzle status on solution
-        discoveries = (short)(Mathf.Pow(2, 4) - 1);
+        //discoveries = (short)(Mathf.Pow(2, 4) - 1);
     }
 
     // Update is called once per frame
