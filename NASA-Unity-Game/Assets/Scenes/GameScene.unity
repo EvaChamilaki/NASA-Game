@@ -1096,8 +1096,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -44.51077}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352025622
 MonoBehaviour:
@@ -1717,7 +1717,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: balbalblablalblablalbalbalblaba
+  cropInfo: 'For Wheat to grow, it needs concentration of N: 150-200 kg/ha, K: 30-70
+    kg/ha, P:100-150 kg/ha and S: 20-30 mg/kg. Soil with Pb higher than 100-300 mg/kg
+    and Cd higher than 3-8 mg/kg is toxic to Wheat. It needs well-drained soil, with
+    pH > 6.4 and Organic Horizon Thickness 15-30 cm.'
 --- !u!1 &553286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,7 +3568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 46.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048154601
@@ -3615,8 +3618,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3651,7 +3654,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -39.796875, y: 29.234375, z: -39.765625, w: 25.5625}
+  m_margin: {x: -144.75684, y: 28.058594, z: -142.82129, w: 25.5625}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
