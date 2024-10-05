@@ -35,20 +35,20 @@ public class MainCamera : MonoBehaviour
     public GameObject canvas;
 
     [Header("Text Fields")]
-    public TextMeshPro pHText;
-    public TextMeshPro drainageText;
-    public TextMeshPro nitrogenText;
-    public TextMeshPro potassiumText;
-    public TextMeshPro phosphorusText;
-    public TextMeshPro zincText;
-    public TextMeshPro sulfurText;
-    public TextMeshPro manganeseText;
-    public TextMeshPro boronText;
-    public TextMeshPro ironText;
-    public TextMeshPro organicHorizonThickText;
-    public TextMeshPro leadText;
-    public TextMeshPro arsenicText;
-    public TextMeshPro cadmiumText;
+    public TMP_Text pHText;
+    public TMP_Text drainageText;
+    public TMP_Text nitrogenText;
+    public TMP_Text potassiumText;
+    public TMP_Text phosphorusText;
+    public TMP_Text zincText;
+    public TMP_Text sulfurText;
+    public TMP_Text manganeseText;
+    public TMP_Text boronText;
+    public TMP_Text ironText;
+    public TMP_Text organicHorizonThickText;
+    public TMP_Text leadText;
+    public TMP_Text arsenicText;
+    public TMP_Text cadmiumText;
 
     private Camera mainCam;
     private bool rightDown = false;

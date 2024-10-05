@@ -551,6 +551,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &182850953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182850945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8137ee8e82afdf40aaed900819da6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldIndex: 1
+  pH: 5
+  drainage: 0
+  nitrogen: 0
+  potassium: 0
+  phosphorus: 0
+  zinc: 0
+  sulfur: 0
+  manganese: 0
+  boron: 0
+  iron: 0
+  organicHorizonThick: 0
+  lead: 0
+  arsenic: 0
+  cadmium: 0
+  selected: 0
 --- !u!1 &507714512
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +621,21 @@ MonoBehaviour:
   zoomLimitHigh: 13
   rotLimitLow: 2
   rotLimitHigh: 53
+  canvas: {fileID: 595164226}
+  pHText: {fileID: 1754772853}
+  drainageText: {fileID: 819712869}
+  nitrogenText: {fileID: 1205612268}
+  potassiumText: {fileID: 1484173080}
+  phosphorusText: {fileID: 1148427505}
+  zincText: {fileID: 169848297}
+  sulfurText: {fileID: 1099679711}
+  manganeseText: {fileID: 1691290327}
+  boronText: {fileID: 1760873163}
+  ironText: {fileID: 2134281528}
+  organicHorizonThickText: {fileID: 642495585}
+  leadText: {fileID: 69482659}
+  arsenicText: {fileID: 694467194}
+  cadmiumText: {fileID: 1513733510}
 --- !u!81 &507714514
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1265,6 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8137ee8e82afdf40aaed900819da6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldIndex: 2
   pH: 8
   drainage: 0
   nitrogen: 0
@@ -1279,6 +1323,7 @@ MonoBehaviour:
   lead: 0
   arsenic: 0
   cadmium: 0
+  selected: 0
 --- !u!1 &1098744335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1395,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -1541,6 +1586,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1134410402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134410394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8137ee8e82afdf40aaed900819da6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldIndex: 0
+  pH: 5
+  drainage: 0
+  nitrogen: 0
+  potassium: 0
+  phosphorus: 0
+  zinc: 0
+  sulfur: 0
+  manganese: 0
+  boron: 0
+  iron: 0
+  organicHorizonThick: 0
+  lead: 0
+  arsenic: 0
+  cadmium: 0
+  selected: 0
 --- !u!1 &1148427503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,12 +1975,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1555867865}
+    - targetCorrespondingSourceObject: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555867869}
     - targetCorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1134410398}
+    - targetCorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1134410402}
     - targetCorrespondingSourceObject: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182850949}
+    - targetCorrespondingSourceObject: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182850953}
   m_SourcePrefab: {fileID: 100100000, guid: 5da1b878badcf394abf353069283704e, type: 3}
 --- !u!4 &1283984138 stripped
 Transform:
@@ -2208,6 +2290,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1555867869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555867861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8137ee8e82afdf40aaed900819da6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldIndex: 3
+  pH: 5
+  drainage: 0
+  nitrogen: 0
+  potassium: 0
+  phosphorus: 0
+  zinc: 0
+  sulfur: 0
+  manganese: 0
+  boron: 0
+  iron: 0
+  organicHorizonThick: 0
+  lead: 0
+  arsenic: 0
+  cadmium: 0
+  selected: 0
 --- !u!1 &1691290325
 GameObject:
   m_ObjectHideFlags: 0
