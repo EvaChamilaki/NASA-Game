@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.10669278, g: 0.509434, b: 0.12587403, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1548,6 +1548,7 @@ GameObject:
   - component: {fileID: 546457076}
   - component: {fileID: 546457075}
   - component: {fileID: 546457077}
+  - component: {fileID: 546457078}
   m_Layer: 5
   m_Name: Wheat
   m_TagString: Untagged
@@ -1704,6 +1705,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &546457078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546457073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: 'ph:'
 --- !u!1 &553286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3361,7 @@ GameObject:
   - component: {fileID: 886835688}
   - component: {fileID: 886835687}
   - component: {fileID: 886835689}
+  - component: {fileID: 886835690}
   m_Layer: 5
   m_Name: Soybeans
   m_TagString: Untagged
@@ -3503,6 +3518,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &886835690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886835685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &1048154599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,7 +3582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3649,6 +3677,7 @@ GameObject:
   - component: {fileID: 1076257386}
   - component: {fileID: 1076257385}
   - component: {fileID: 1076257387}
+  - component: {fileID: 1076257388}
   m_Layer: 5
   m_Name: Pumpkins
   m_TagString: Untagged
@@ -3805,6 +3834,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1076257388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076257383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &1098744335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,6 +4641,7 @@ GameObject:
   - component: {fileID: 1267389322}
   - component: {fileID: 1267389321}
   - component: {fileID: 1267389323}
+  - component: {fileID: 1267389324}
   m_Layer: 5
   m_Name: Carrot
   m_TagString: Untagged
@@ -4755,6 +4798,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1267389324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267389319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1001 &1283984137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5098,6 +5154,7 @@ GameObject:
   - component: {fileID: 1406415033}
   - component: {fileID: 1406415032}
   - component: {fileID: 1406415034}
+  - component: {fileID: 1406415035}
   m_Layer: 5
   m_Name: Barley
   m_TagString: Untagged
@@ -5254,6 +5311,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1406415035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406415030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &1484173078
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,6 +5658,7 @@ GameObject:
   - component: {fileID: 1563268273}
   - component: {fileID: 1563268272}
   - component: {fileID: 1563268274}
+  - component: {fileID: 1563268275}
   m_Layer: 5
   m_Name: Lettuce
   m_TagString: Untagged
@@ -5744,6 +5815,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1563268275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563268270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &1639308358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +5974,7 @@ GameObject:
   - component: {fileID: 1651327156}
   - component: {fileID: 1651327155}
   - component: {fileID: 1651327157}
+  - component: {fileID: 1651327158}
   m_Layer: 5
   m_Name: Corn
   m_TagString: Untagged
@@ -6046,6 +6131,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1651327158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651327153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &1691290325
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +6737,7 @@ GameObject:
   - component: {fileID: 1994653818}
   - component: {fileID: 1994653817}
   - component: {fileID: 1994653819}
+  - component: {fileID: 1994653820}
   m_Layer: 5
   m_Name: Sugarcane
   m_TagString: Untagged
@@ -6795,6 +6894,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &1994653820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994653815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1001 &2000073720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6884,6 +6996,7 @@ GameObject:
   - component: {fileID: 2107717102}
   - component: {fileID: 2107717101}
   - component: {fileID: 2107717103}
+  - component: {fileID: 2107717104}
   m_Layer: 5
   m_Name: Rice
   m_TagString: Untagged
@@ -7040,6 +7153,19 @@ MonoBehaviour:
   maxIron: 0
   minOrganicHorizonThick: 0
   maxOrganicHorizonThick: 0
+--- !u!114 &2107717104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107717099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: ph
 --- !u!1 &2134281526
 GameObject:
   m_ObjectHideFlags: 0
