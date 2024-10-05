@@ -6,6 +6,7 @@ using System.Collections.Generic;
 //using System.Numerics;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class MainCamera : MonoBehaviour
 {
@@ -30,6 +31,25 @@ public class MainCamera : MonoBehaviour
     public float rotLimitLow = 2.0f;
     public float rotLimitHigh = 50.0f;
 
+    [Header("GUI")]
+    public GameObject canvas;
+
+    [Header("Text Fields")]
+    public TMP_Text pHText;
+    public TMP_Text drainageText;
+    public TMP_Text nitrogenText;
+    public TMP_Text potassiumText;
+    public TMP_Text phosphorusText;
+    public TMP_Text zincText;
+    public TMP_Text sulfurText;
+    public TMP_Text manganeseText;
+    public TMP_Text boronText;
+    public TMP_Text ironText;
+    public TMP_Text organicHorizonThickText;
+    public TMP_Text leadText;
+    public TMP_Text arsenicText;
+    public TMP_Text cadmiumText;
+
     private Camera mainCam;
     private bool rightDown = false;
     private bool leftDown = false;
@@ -40,12 +60,16 @@ public class MainCamera : MonoBehaviour
     private bool rightMouseDown = false;
     private float prevMousePos = 0.0f;
 
+    private int selectedFieldIndex = -1;
+    private GameObject selectedField;
+
     // Start is called before the first frame update
     void Start()
     {
         mainCam = GetComponent<Camera>();
         mainCam.transform.position = initialPos;
         mainCam.transform.Rotate(initialRot);
+        canvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -134,5 +158,60 @@ public class MainCamera : MonoBehaviour
         mainCam.transform.position = newPos;
 
         prevMousePos = Input.mousePosition.y;
+
+        // Raycasting section
+        RaycastHit hit;
+        int layerMask = 1 << 8;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+
+            if (hit.transform.gameObject.CompareTag("Field"))
+                if (Input.GetMouseButton(0))
+                {
+                    if (selectedFieldIndex != -1)
+                        selectedField.GetComponent<Field>().Deselect();
+
+                    selectedField = hit.transform.gameObject;
+                    selectedField.GetComponent<Field>().Select();
+
+                    FillUI();
+                }
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.Log("Did not Hit");
+        }
+    }
+
+    private void FillUI()
+    {
+        pHText.text = "pH:" + selectedField.GetComponent<Field>().pH + " ";
+
+        if (selectedField.GetComponent<Field>().drainage == Drainage.CLAY_SOIL)
+            drainageText.text = "Drainage: Clay soil";
+        else if (selectedField.GetComponent<Field>().drainage == Drainage.WELL_DRAINED)
+            drainageText.text = "Drainage: Well drained";
+        else if (selectedField.GetComponent<Field>().drainage == Drainage.SANDY_SOIL)
+            drainageText.text = "Drainage: Sandy soil";
+        else if (selectedField.GetComponent<Field>().drainage == Drainage.SILT_SOIL)
+            drainageText.text = "Drainage: Silt soil";
+
+        nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen;
+        potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium;
+        phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus;
+        zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc;
+        sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur;
+        manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese;
+        boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron;
+        ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron;
+        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick;
+        leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead;
+        arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic;
+        cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium;
+
+        canvas.SetActive(true);
     }
 }
