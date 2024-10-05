@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ScientificInstrument : MonoBehaviour
+public class FarmerTool : MonoBehaviour
 {
     public int toolIndex = -1;
 
@@ -18,7 +17,7 @@ public class ScientificInstrument : MonoBehaviour
 
         mainCamera.GetComponent<MainCamera>().SetInteractionFlag(true);
         moving = true;
-    }    
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +46,7 @@ public class ScientificInstrument : MonoBehaviour
 
                 if (hit.transform.gameObject.CompareTag("Field") && Input.GetMouseButtonDown(0) && hit.transform.gameObject == mainCamera.GetComponent<MainCamera>().GetSelectedField())
                 {
-                    Measure();
+                    UseTool();
                 }
             }
         }
@@ -62,9 +61,9 @@ public class ScientificInstrument : MonoBehaviour
         }
     }
 
-    void Measure()
+    void UseTool()
     {
-        mainCamera.GetComponent<MainCamera>().Discover(toolIndex);
+        mainCamera.GetComponent<MainCamera>().UseTool(toolIndex);
         mainCamera.GetComponent<MainCamera>().SetInteractionFlag(false);
         transform.position = initPos;
         moving = false;
