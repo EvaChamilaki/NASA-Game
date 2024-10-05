@@ -58,6 +58,7 @@ public class MainCamera : MonoBehaviour
     private bool zoomInDown = false;
     private bool zoomOutDown = false;
     private bool rightMouseDown = false;
+    private bool toolInteractionFlag = false;
     private float prevMousePos = 0.0f;
 
     private int selectedFieldIndex = -1;
@@ -163,7 +164,7 @@ public class MainCamera : MonoBehaviour
         RaycastHit hit;
         int layerMask = 1 << 8;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (!toolInteractionFlag && Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
 
@@ -254,8 +255,32 @@ public class MainCamera : MonoBehaviour
         FillUI();
     }
 
+    public void UseTool(int toolIndex)
+    {
+        if (selectedField == null) return;
+
+        selectedField.GetComponent<Field>().UseTool(toolIndex);
+
+        FillUI();
+    }
+
     public bool FieldIsSelected()
     {
         return (selectedField != null);
+    }
+
+    public void SetInteractionFlag(bool flag)
+    {
+        toolInteractionFlag = flag;
+    }
+
+    public bool GetInteractionFlag()
+    {
+        return toolInteractionFlag;
+    }
+
+    public GameObject GetSelectedField()
+    {
+        return selectedField;
     }
 }

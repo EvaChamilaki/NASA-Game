@@ -37,6 +37,19 @@ public class Field : MonoBehaviour
     public float arsenic = 0.0f;
     public float cadmium = 0.0f;
 
+    [Header("Tool factors")]
+    public float nitrogenBoost = 5.0f;  
+    public float potassiumBoost = 5.0f; 
+    public float phosphorusBoost = 5.0f;
+    public float zincBoost = 5.0f;      
+    public float sulfurBoost = 5.0f;    
+    public float manganeseBoost = 5.0f; 
+    public float boronBoost = 5.0f;     
+    public float ironBoost = 5.0f;      
+    public float leadBoost = 5.0f;
+    public float arsenicBoost = 5.0f;
+    public float cadmiumBoost = 5.0f;
+
     [Header("Do not fill!")]
     public bool selected = false;
 
@@ -152,6 +165,44 @@ public class Field : MonoBehaviour
     {
         discoveries = WriteIntoBits(discoveries, bit_index, 1);
     }
+
+    public void UseTool(int toolIndex)
+    {
+        switch (toolIndex)
+        {
+            case 0:
+                potassium += potassiumBoost;
+                phosphorus += phosphorusBoost;
+                break;
+
+            case 1:
+                nitrogen += nitrogenBoost;
+                break;
+
+            case 2:
+                zinc += zincBoost;
+                break;
+
+            case 3:
+                sulfur += sulfurBoost;
+                break;
+
+            case 4:
+                manganese += manganeseBoost;
+                break;
+
+            case 5:
+                boron += boronBoost;
+                break;
+
+            case 6:
+                iron += ironBoost;
+                break;
+
+            default:
+                break;
+        }
+    }    
 
     /// <summary>
     /// Bit magic
