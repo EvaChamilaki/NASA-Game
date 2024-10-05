@@ -73,6 +73,11 @@ public class Field : MonoBehaviour
         return ReadFromBits(discoveries, bit_index);
     }
 
+    public void WriteDiscovery(short bit_index)
+    {
+        discoveries = WriteIntoBits(discoveries, bit_index, 1);
+    }
+
     /// <summary>
     /// Bit magic
     /// </summary>

@@ -1,5 +1,5 @@
 // MACROS
-#define DEBUG_LOG
+//#define DEBUG_LOG
 
 using System.Collections;
 using System.Collections.Generic;
@@ -182,14 +182,16 @@ public class MainCamera : MonoBehaviour
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+#if DEBUG_LOG
             Debug.Log("Did not Hit");
+#endif
         }
     }
 
     private void FillUI()
     {
         if (selectedField.GetComponent<Field>().ReadDiscovery(0) == 1)
-            pHText.text = "pH:" + selectedField.GetComponent<Field>().pH;
+            pHText.text = "pH: " + selectedField.GetComponent<Field>().pH;
         else
             pHText.text = "pH: ???";
 
@@ -242,5 +244,13 @@ public class MainCamera : MonoBehaviour
             organicHorizonThickText.text = "O Horizon thickness: ???";
 
         canvas.SetActive(true);
+    }
+
+    public void Discover(int toolIndex)
+    {
+        if (selectedField == null) return;
+
+        selectedField.GetComponent<Field>().WriteDiscovery((short)toolIndex);
+        FillUI();
     }
 }
