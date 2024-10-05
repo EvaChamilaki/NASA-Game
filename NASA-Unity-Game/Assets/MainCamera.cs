@@ -28,7 +28,7 @@ public class MainCamera : MonoBehaviour
 
     [Header("Rotation constraints")]
     public float rotLimitLow = 2.0f;
-    public float rotLimitHigh = 51.0f;
+    public float rotLimitHigh = 50.0f;
 
     private Camera mainCam;
     private bool rightDown = false;
@@ -67,6 +67,13 @@ public class MainCamera : MonoBehaviour
                 0.0f, 0.0f);
 
             mainCam.transform.Rotate(newRot);
+
+            if (mainCam.transform.eulerAngles.x >= rotLimitHigh)
+                mainCam.transform.Rotate(rotLimitHigh - mainCam.transform.eulerAngles.x, 0.0f, 0.0f);
+            else if (mainCam.transform.eulerAngles.x <= rotLimitLow)
+                mainCam.transform.Rotate(rotLimitLow - mainCam.transform.eulerAngles.x, 0.0f, 0.0f);
+
+            Debug.Log(mainCam.transform.eulerAngles.x);
         }
 
         // Input handling for panning
