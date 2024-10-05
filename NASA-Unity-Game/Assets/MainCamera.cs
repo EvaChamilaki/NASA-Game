@@ -25,7 +25,19 @@ public class MainCamera : MonoBehaviour
     public float zoomLimitLow = 3.0f;
     public float zoomLimitHigh = 10.0f;
 
+    [Header("Rotation constraints")]
+    public float rotLimitLow = 2.0f;
+    public float rotLimitHigh = 51.0f;
+
     private Camera mainCam;
+    private bool rightDown = false;
+    private bool leftDown = false;
+    private bool fwdDown = false;
+    private bool aftDown = false;
+    private bool zoomInDown = false;
+    private bool zoomOutDown = false;
+    private bool rightMouseDown = false;
+    private float prevMousePos = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,27 +52,77 @@ public class MainCamera : MonoBehaviour
     {
         float dt = Time.deltaTime;
 
+        Vector3 newRot = mainCam.transform.rotation.eulerAngles;
+
+        if (Input.GetMouseButtonDown(1))
+            rightMouseDown = true;
+        else if (Input.GetMouseButtonUp(1))
+            rightMouseDown = false;
+
+        // Input handling for rotation
+        newRot = new Vector3(Input.GetAxis("Mouse X") * dt * 20.0f,
+            0.0f, 0.0f);
+        
+
+        //mainCam.transform.Rotate(newRot);
+        //if (mainCam.transform.rotation.eulerAngles.x >= rotLimitHigh)
+        //{
+        //    mainCam.transform.Rotate(-newRot);
+        //    mainCam.transform.Rotate(rotLimitHigh, 0.0f, 0.0f);
+        //}
+        //else if (mainCam.transform.rotation.eulerAngles.x <= rotLimitLow)
+        //{
+        //    mainCam.transform.Rotate(-newRot);
+        //    mainCam.transform.Rotate(rotLimitLow, 0.0f, 0.0f);
+        //}
+
         // Input handling for panning
         Vector3 newPos = mainCam.transform.position;
         if (Input.GetKeyDown(KeyCode.W))
-            newPos = new Vector3(mainCam.transform.position.x, mainCam.transform.position.y,
-                Math.Clamp(mainCam.transform.position.z + panSensitivity * dt, -panLimitZ, panLimitZ));
-        else if (Input.GetKeyDown(KeyCode.S))
-            newPos = new Vector3(mainCam.transform.position.x, mainCam.transform.position.y,
-                Math.Clamp(mainCam.transform.position.z - panSensitivity * dt, -panLimitZ, panLimitZ));
+            fwdDown = true;
+        else if (Input.GetKeyUp(KeyCode.W))
+            fwdDown = false;
+        if (Input.GetKeyDown(KeyCode.S))
+            aftDown = true;
+        else if (Input.GetKeyUp(KeyCode.S))
+            aftDown = false;
         if (Input.GetKeyDown(KeyCode.D))
-            newPos = new Vector3(Math.Clamp(mainCam.transform.position.x + panSensitivity * dt,
-                -panLimitX, panLimitX), mainCam.transform.position.y, mainCam.transform.position.z);
-        else if (Input.GetKeyDown(KeyCode.A))
-            newPos = new Vector3(Math.Clamp(mainCam.transform.position.x - panSensitivity * dt, -panLimitX, panLimitX),
-                mainCam.transform.position.y, mainCam.transform.position.z);
+            rightDown = true;
+        else if (Input.GetKeyUp(KeyCode.D))
+            rightDown = false;
+        if (Input.GetKeyDown(KeyCode.A))
+            leftDown = true;
+        else if (Input.GetKeyUp(KeyCode.A))
+            leftDown = false;
+
+        if (fwdDown)
+            newPos = new Vector3(newPos.x, newPos.y,
+                Math.Clamp(newPos.z + panSensitivity * dt, -panLimitZ, panLimitZ));
+        else if (aftDown)
+            newPos = new Vector3(newPos.x, newPos.y,
+                Math.Clamp(newPos.z - panSensitivity * dt, -panLimitZ, panLimitZ));
+        if (rightDown)
+            newPos = new Vector3(Math.Clamp(newPos.x + panSensitivity * dt,
+                -panLimitX, panLimitX), newPos.y, newPos.z);
+        else if (leftDown)
+            newPos = new Vector3(Math.Clamp(newPos.x - panSensitivity * dt, -panLimitX, panLimitX),
+                newPos.y, newPos.z);
 
         // Input handling for zooming
         // TODO: Add wheeeeeeel!
         if (Input.GetKeyDown(KeyCode.E))
-            newPos = new Vector3(mainCam.transform.position.x, Math.Clamp(mainCam.transform.position.y - zoomSensitivity * dt, zoomLimitLow, zoomLimitHigh), mainCam.transform.position.z);
-        else if (Input.GetKeyDown(KeyCode.Q))
-            newPos = new Vector3(mainCam.transform.position.x, Math.Clamp(mainCam.transform.position.y + zoomSensitivity * dt, zoomLimitLow, zoomLimitHigh), mainCam.transform.position.z);
+            zoomInDown = true;
+        else if (Input.GetKeyUp(KeyCode.E))
+            zoomInDown = false;
+        if (Input.GetKeyDown(KeyCode.Q))
+            zoomOutDown = true;
+        else if (Input.GetKeyUp(KeyCode.Q))
+            zoomOutDown = false;
+
+        if (zoomInDown)
+            newPos = new Vector3(newPos.x, Math.Clamp(newPos.y - zoomSensitivity * dt, zoomLimitLow, zoomLimitHigh), newPos.z);
+        else if (zoomOutDown)
+            newPos = new Vector3(newPos.x, Math.Clamp(newPos.y + zoomSensitivity * dt, zoomLimitLow, zoomLimitHigh), newPos.z);
 
 #if DEBUG_LOG
         if (mainCam.transform.position != newPos)
@@ -68,5 +130,7 @@ public class MainCamera : MonoBehaviour
 #endif
 
         mainCam.transform.position = newPos;
+
+        prevMousePos = Input.GetAxis("Horizontal");
     }
 }
