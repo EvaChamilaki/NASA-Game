@@ -674,7 +674,7 @@ MonoBehaviour:
   rotLimitLow: 2
   rotLimitHigh: 53
   canvas: {fileID: 0}
-  pHText: {fileID: 0}
+  pHText: {fileID: 1754772853}
   drainageText: {fileID: 0}
   nitrogenText: {fileID: 0}
   potassiumText: {fileID: 0}
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 796150639}
   - component: {fileID: 796150638}
   m_Layer: 5
-  m_Name: Depth Probe (1)
+  m_Name: Shovel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2564,7 +2564,7 @@ GameObject:
   - component: {fileID: 1113084281}
   - component: {fileID: 1113084280}
   m_Layer: 5
-  m_Name: pH
+  m_Name: pHMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

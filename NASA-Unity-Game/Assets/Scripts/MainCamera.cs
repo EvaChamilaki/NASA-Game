@@ -188,6 +188,9 @@ public class MainCamera : MonoBehaviour
 
     private void FillUI()
     {
+        if (selectedField.GetComponent<Field>().ReadDiscovery(0) == 1)
+            // TODO:
+
         pHText.text = "pH:" + selectedField.GetComponent<Field>().pH;
 
         if (selectedField.GetComponent<Field>().drainage == Drainage.CLAY_SOIL)
@@ -207,10 +210,11 @@ public class MainCamera : MonoBehaviour
         manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese + " mg/kg";
         boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron + " mg/kg";
         ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron + " mg/kg";
-        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick + " cm";
         leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead + " mg/kg";
         arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
         cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
+
+        organicHorizonThickText.text =  "O Horizon thickness: " + selectedField.GetComponent<Field>().organicHorizonThick + " cm";
 
         canvas.SetActive(true);
     }

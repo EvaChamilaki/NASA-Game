@@ -68,6 +68,11 @@ public class Field : MonoBehaviour
         selected = false;
     }
 
+    public short ReadDiscovery(short bit_index)
+    {
+        return ReadFromBits(discoveries, bit_index);
+    }
+
     /// <summary>
     /// Bit magic
     /// </summary>
