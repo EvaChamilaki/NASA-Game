@@ -73,7 +73,9 @@ public class MainCamera : MonoBehaviour
             else if (mainCam.transform.eulerAngles.x <= rotLimitLow)
                 mainCam.transform.Rotate(rotLimitLow - mainCam.transform.eulerAngles.x, 0.0f, 0.0f);
 
+#if DEBUG_LOG
             Debug.Log(mainCam.transform.eulerAngles.x);
+#endif
         }
 
         // Input handling for panning
