@@ -41,6 +41,8 @@ public class Field : MonoBehaviour
     public bool selected = false;
 
     private short discoveries = 0;
+    private GameObject plantedCrop = null;
+    private bool correntPlanting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +58,79 @@ public class Field : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlantCrop(GameObject crop)
+    {
+        // Can't plant another crop
+        if (plantedCrop != null)
+            return;
+
+        plantedCrop = crop;
+
+        // Compatibility check
+        correntPlanting = true;
+        if (pH < plantedCrop.GetComponent<Crop>().minpH || pH > plantedCrop.GetComponent<Crop>().maxpH)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (drainage == plantedCrop.GetComponent<Crop>().drainage)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (nitrogen < plantedCrop.GetComponent<Crop>().minNitrogen || nitrogen > plantedCrop.GetComponent<Crop>().maxNitrogen)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (potassium < plantedCrop.GetComponent<Crop>().minPotassium || potassium > plantedCrop.GetComponent<Crop>().maxPotassium)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (phosphorus < plantedCrop.GetComponent<Crop>().minPhosphorus || phosphorus > plantedCrop.GetComponent<Crop>().maxPhosphorus)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || phosphorus > plantedCrop.GetComponent<Crop>().maxZinc)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (sulfur < plantedCrop.GetComponent<Crop>().minSulfur || sulfur > plantedCrop.GetComponent<Crop>().maxSulfur)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (manganese < plantedCrop.GetComponent<Crop>().minManganese || manganese > plantedCrop.GetComponent<Crop>().maxManganese)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (boron < plantedCrop.GetComponent<Crop>().minBoron || boron > plantedCrop.GetComponent<Crop>().maxBoron)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (iron < plantedCrop.GetComponent<Crop>().minIron || iron > plantedCrop.GetComponent<Crop>().maxIron)
+        {
+            correntPlanting = false;
+            return;
+        }
+        else if (organicHorizonThick < plantedCrop.GetComponent<Crop>().minOrganicHorizonThick || organicHorizonThick > plantedCrop.GetComponent<Crop>().maxOrganicHorizonThick)
+        {
+            correntPlanting = false;
+            return;
+        }
+    }
+
+    public void ResetField()
+    {
+        plantedCrop = null;
+        correntPlanting = false;
     }
 
     public void Select()
