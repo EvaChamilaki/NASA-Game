@@ -1173,6 +1173,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 1556614086}
   selected: 0
 --- !u!1 &184980294
@@ -2428,6 +2429,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 85928052}
   selected: 0
 --- !u!65 &305864011
@@ -4133,7 +4135,8 @@ MonoBehaviour:
     the crop, drag it to the selected field, and "Left click" on it.
   - If the crop was compatible with the field, the plant will grow to its full potential.
     Otherwise, it will fail.
-  - You can access the tutorial again by pressing ESC.
+  - Your goal is to fill all the fields with plants. You can access the tutorial
+    again by pressing ESC. Have fun!
   tutText: {fileID: 354196026}
   prevBut: {fileID: 1166523231}
   nextBut: {fileID: 1166723211}
@@ -6648,6 +6651,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 1075401999}
   selected: 0
 --- !u!4 &822031045 stripped
@@ -8256,6 +8260,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 1928361929}
   selected: 0
 --- !u!65 &1111384297
@@ -8347,6 +8352,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 17.001, y: 0.5, z: -9.16}
   overlay: {fileID: 777120084}
   selected: 0
 --- !u!65 &1111384299
@@ -8383,20 +8389,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 6
-  pH: 8
-  drainage: 3
-  nitrogen: 1
-  potassium: 4
-  phosphorus: 5
+  pH: 4
+  drainage: 0
+  nitrogen: 6
+  potassium: 6
+  phosphorus: 7
   zinc: 8
   sulfur: 9
-  manganese: 3
-  boron: 2
-  iron: 7
-  organicHorizonThick: 5
-  lead: 6
-  arsenic: 97
-  cadmium: 8
+  manganese: 7
+  boron: 7
+  iron: 8
+  organicHorizonThick: 9
+  lead: 11
+  arsenic: 22
+  cadmium: 55
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -8410,6 +8416,9 @@ MonoBehaviour:
   arsenicBoost: 5
   cadmiumBoost: 5
   plants:
+  - {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+  - {fileID: 2418844910331161109, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
+  - {fileID: 7343273179568182656, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -8435,9 +8444,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  interval: {x: 30.66, y: 0.5, z: -9.16}
   overlay: {fileID: 1042187225}
   selected: 0
 --- !u!65 &1111384301
@@ -8863,6 +8870,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 1770561314}
   selected: 0
 --- !u!1 &1148427503
@@ -11731,6 +11739,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  interval: {x: 0, y: 0, z: 0}
   overlay: {fileID: 180744841}
   selected: 0
 --- !u!1 &1556614086 stripped
@@ -14630,7 +14639,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17
+      value: -8.55
       objectReference: {fileID: 0}
     - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14638,7 +14647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.16
+      value: -10.12
       objectReference: {fileID: 0}
     - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
       propertyPath: m_LocalRotation.w
