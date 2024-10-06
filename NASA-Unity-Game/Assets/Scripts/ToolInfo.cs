@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using TMPro;
 
 public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -9,6 +11,10 @@ public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public string toolInfo;
 
     private float time = 0.3f;
+
+    public TextMeshProUGUI toolInfoTextComponent;  
+    public Image toolInfoImage; 
+    public Sprite toolSprite;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -20,11 +26,16 @@ public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         StopAllCoroutines();
         CropInfoPanel.OnMouseExit();
+        HideElements();
     }
 
     private void ShowMessage()
     {
         CropInfoPanel.OnMouseHover(gameObject, toolInfo, Input.mousePosition);
+        toolInfoImage.sprite = toolSprite;
+
+        toolInfoImage.gameObject.SetActive(true);
+        toolInfoTextComponent.gameObject.SetActive(true);
 
     }
 
@@ -33,5 +44,11 @@ public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         yield return new WaitForSeconds(time);
 
         ShowMessage();
+    }
+
+      private void HideElements()
+    {
+        toolInfoImage.gameObject.SetActive(false);
+        toolInfoTextComponent.gameObject.SetActive(false);
     }
 }
