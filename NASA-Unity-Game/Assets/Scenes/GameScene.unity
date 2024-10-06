@@ -4834,7 +4834,7 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
-  overlay: {fileID: 56738335}
+  overlay: {fileID: 1254809112}
   selected: 0
 --- !u!4 &822031045 stripped
 Transform:
@@ -6793,6 +6793,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
   m_PrefabInstance: {fileID: 1221258428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1254809112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1812727826}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1267389319
 GameObject:
