@@ -9,6 +9,8 @@ TagManager:
   - Instrument
   - Overlay
   - Canvas
+  - Crop Information
+  - Tool Information
   layers:
   - Default
   - TransparentFX

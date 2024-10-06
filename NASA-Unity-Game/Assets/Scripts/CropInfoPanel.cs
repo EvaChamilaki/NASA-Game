@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.EventSystems;
 
 public class CropInfoPanel : MonoBehaviour
 {
-    [TextArea(3, 10)] 
     public TextMeshProUGUI cropInfo;
+    public TextMeshProUGUI toolsInfo;
     public RectTransform infoPanel;
+    public RectTransform toolInfoPanel;
 
-    public static Action<string, Vector2> OnMouseHover; //string: the text we want to display, Vector2: the mouse position
+    public static Action<GameObject, string, Vector2> OnMouseHover; //string: the text we want to display, Vector2: the mouse position
     public static Action OnMouseExit;
 
     private GameObject mainCamera;
@@ -34,12 +36,24 @@ public class CropInfoPanel : MonoBehaviour
         HideInfo();
     }
 
-    private void ShowInfo(string info, Vector2 mousePos)
+    private void ShowInfo(GameObject hoveredObject, string info, Vector2 mousePos)
     {
-        cropInfo.text = info;
+        if(hoveredObject.CompareTag("Crop Information"))
+        {
+            cropInfo.text = info;
+            infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth > 400 ? 400 : cropInfo.preferredWidth, cropInfo.preferredHeight > 200 ? 200 : cropInfo.preferredHeight);
+            infoPanel.gameObject.SetActive(true);
+            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.5f);
+        }
 
-        infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth >400 ? 400 : cropInfo.preferredWidth, cropInfo.preferredHeight > 200 ? 200 :cropInfo.preferredHeight);
-
+        else if (hoveredObject.CompareTag("Tool Information"))
+        {
+            toolsInfo.text = info;
+            toolInfoPanel.sizeDelta = new Vector2(toolsInfo.preferredWidth>200? 200: toolsInfo.preferredWidth, toolsInfo.preferredHeight > 100 ? 100: toolsInfo.preferredHeight);
+            toolInfoPanel.gameObject.SetActive(true);
+            toolInfoPanel.transform.position = new Vector2(mousePos.x-toolInfoPanel.sizeDelta.x * 0.6f, mousePos.y+toolInfoPanel.sizeDelta.y*0.1f);
+        }
+        
         if (!mainCamera.GetComponent<MainCamera>().GetInteractionFlag())
         {
             infoPanel.gameObject.SetActive(true);
@@ -52,6 +66,8 @@ public class CropInfoPanel : MonoBehaviour
     public void HideInfo()
     {
         cropInfo.text = default;
+        toolsInfo.text = default;
         infoPanel.gameObject.SetActive(false);
+        toolInfoPanel.gameObject.SetActive(false);
     }
 }

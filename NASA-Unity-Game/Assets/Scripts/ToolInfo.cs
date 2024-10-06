@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-
-
-public class CropInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [TextArea(3, 10)]
-    public string cropInfo;
+    public string toolInfo;
 
     private float time = 0.3f;
 
@@ -26,7 +24,7 @@ public class CropInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private void ShowMessage()
     {
-        CropInfoPanel.OnMouseHover(gameObject, cropInfo, Input.mousePosition);
+        CropInfoPanel.OnMouseHover(gameObject, toolInfo, Input.mousePosition);
 
     }
 
