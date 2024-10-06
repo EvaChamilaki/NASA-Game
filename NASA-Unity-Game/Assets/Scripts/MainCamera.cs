@@ -182,7 +182,7 @@ public class MainCamera : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Field"))
                 if (Input.GetMouseButton(0))
                 {
-                    if (selectedFieldIndex != -1)
+                    if (selectedField != null)
                         selectedField.GetComponent<Field>().Deselect();
 
                     selectedField = hit.transform.gameObject;
@@ -273,6 +273,13 @@ public class MainCamera : MonoBehaviour
         selectedField.GetComponent<Field>().UseTool(toolIndex);
 
         FillUI();
+    }
+
+    public void PlantCrop(GameObject crop)
+    {
+        if (selectedField == null) return;
+
+        selectedField.GetComponent<Field>().PlantCrop(crop);
     }
 
     public bool FieldIsSelected()

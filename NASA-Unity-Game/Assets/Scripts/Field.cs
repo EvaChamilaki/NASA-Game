@@ -1,3 +1,5 @@
+#define DEBUG_LOG
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,8 +24,8 @@ public class Field : MonoBehaviour
     public float pH = 5.0f;             // lime to increase, organic to decrease
     public Drainage drainage = Drainage.CLAY_SOIL;      // tractor to change
     // All are kg per hectar
-    public float nitrogen = 0.0f;       // seaweed
-    public float potassium = 0.0f;      // manure
+    public float nitrogen = 0.0f;       // manure
+    public float potassium = 0.0f;      // seaweed
     public float phosphorus = 0.0f;     // manure
     // All are mg per kg
     public float zinc = 0.0f;           // compost
@@ -51,6 +53,9 @@ public class Field : MonoBehaviour
     public float leadBoost = 5.0f;
     public float arsenicBoost = 5.0f;
     public float cadmiumBoost = 5.0f;
+
+    [Header("El Overlay")]
+    public GameObject overlay;
 
     [Header("Do not fill!")]
     public bool selected = false;
@@ -95,6 +100,11 @@ public class Field : MonoBehaviour
         arsenicInitial = arsenic;
         cadmiumInitial = cadmium;
 
+        if (overlay == null)
+            Debug.LogError("ERROR::overlay not set!");
+
+        overlay.SetActive(false);
+
     //discoveries = (short)(Mathf.Pow(2, 4) - 1);
 }
 
@@ -117,58 +127,95 @@ public class Field : MonoBehaviour
         if (pH < plantedCrop.GetComponent<Crop>().minpH || pH > plantedCrop.GetComponent<Crop>().maxpH)
         {
             correntPlanting = false;
+            #if DEBUG_LOG
+                        Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (drainage == plantedCrop.GetComponent<Crop>().drainage)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (nitrogen < plantedCrop.GetComponent<Crop>().minNitrogen || nitrogen > plantedCrop.GetComponent<Crop>().maxNitrogen)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (potassium < plantedCrop.GetComponent<Crop>().minPotassium || potassium > plantedCrop.GetComponent<Crop>().maxPotassium)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (phosphorus < plantedCrop.GetComponent<Crop>().minPhosphorus || phosphorus > plantedCrop.GetComponent<Crop>().maxPhosphorus)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || phosphorus > plantedCrop.GetComponent<Crop>().maxZinc)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (sulfur < plantedCrop.GetComponent<Crop>().minSulfur || sulfur > plantedCrop.GetComponent<Crop>().maxSulfur)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (manganese < plantedCrop.GetComponent<Crop>().minManganese || manganese > plantedCrop.GetComponent<Crop>().maxManganese)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (boron < plantedCrop.GetComponent<Crop>().minBoron || boron > plantedCrop.GetComponent<Crop>().maxBoron)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (iron < plantedCrop.GetComponent<Crop>().minIron || iron > plantedCrop.GetComponent<Crop>().maxIron)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
         else if (organicHorizonThick < plantedCrop.GetComponent<Crop>().minOrganicHorizonThick || organicHorizonThick > plantedCrop.GetComponent<Crop>().maxOrganicHorizonThick)
         {
             correntPlanting = false;
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
+#endif
             return;
         }
+
+#if DEBUG_LOG
+            Debug.Log("Compatible plant!");
+#endif
     }
 
     public void ResetField()
@@ -195,11 +242,13 @@ public class Field : MonoBehaviour
     public void Select()
     {
         selected = true;
+        overlay.SetActive(true);
     }
 
     public void Deselect()
     {
         selected = false;
+        overlay.SetActive(false);
     }
 
     public short ReadDiscovery(short bit_index)
@@ -217,12 +266,12 @@ public class Field : MonoBehaviour
         switch (toolIndex)
         {
             case 0:
-                potassium += potassiumBoost;
+                nitrogen += nitrogenBoost;
                 phosphorus += phosphorusBoost;
                 break;
 
             case 1:
-                nitrogen += nitrogenBoost;
+                potassium += potassiumBoost;
                 break;
 
             case 2:
