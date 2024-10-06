@@ -223,31 +223,31 @@ public class MainCamera : MonoBehaviour
 
         if (selectedField.GetComponent<Field>().ReadDiscovery(2) == 1)
         {
-            nitrogenText.text = "Nitrogen: " + selectedField.GetComponent<Field>().nitrogen + " kg/ha";
-            potassiumText.text = "Potassium: " + selectedField.GetComponent<Field>().potassium + " kg/ha";
-            phosphorusText.text = "Phosphorus: " + selectedField.GetComponent<Field>().phosphorus + " kg/ha";
-            zincText.text = "Zinc: " + selectedField.GetComponent<Field>().zinc + " mg/kg";
-            sulfurText.text = "Sulfur: " + selectedField.GetComponent<Field>().sulfur + " mg/kg";
-            manganeseText.text = "Manganese: " + selectedField.GetComponent<Field>().manganese + " mg/kg";
-            boronText.text = "Boron: " + selectedField.GetComponent<Field>().boron + " mg/kg";
-            ironText.text = "Iron: " + selectedField.GetComponent<Field>().iron + " mg/kg";
-            leadText.text = "Lead: " + selectedField.GetComponent<Field>().lead + " mg/kg";
-            arsenicText.text = "Arsenic: " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
-            cadmiumText.text = "Cadmium: " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
+            nitrogenText.text = "Nitrogen (N): " + selectedField.GetComponent<Field>().nitrogen + " kg/ha";
+            potassiumText.text = "Potassium (K): " + selectedField.GetComponent<Field>().potassium + " kg/ha";
+            phosphorusText.text = "Phosphorus (P): " + selectedField.GetComponent<Field>().phosphorus + " kg/ha";
+            zincText.text = "Zinc (Zn): " + selectedField.GetComponent<Field>().zinc + " mg/kg";
+            sulfurText.text = "Sulfur (S): " + selectedField.GetComponent<Field>().sulfur + " mg/kg";
+            manganeseText.text = "Manganese (Mn): " + selectedField.GetComponent<Field>().manganese + " mg/kg";
+            boronText.text = "Boron (B): " + selectedField.GetComponent<Field>().boron + " mg/kg";
+            ironText.text = "Iron (Fe): " + selectedField.GetComponent<Field>().iron + " mg/kg";
+            leadText.text = "Lead (Pb): " + selectedField.GetComponent<Field>().lead + " mg/kg";
+            arsenicText.text = "Arsenic (As): " + selectedField.GetComponent<Field>().arsenic + " mg/kg";
+            cadmiumText.text = "Cadmium (Cd): " + selectedField.GetComponent<Field>().cadmium + " mg/kg";
         }
         else
         {
-            nitrogenText.text = "Nitrogen: ???";
-            potassiumText.text = "Potassium: ???";
-            phosphorusText.text = "Phosphorus: ???";
-            zincText.text = "Zinc: ???";
-            sulfurText.text = "Sulfur: ???";
-            manganeseText.text = "Manganese: ???";
-            boronText.text = "Boron: ???";
-            ironText.text = "Iron: ???";
-            leadText.text = "Lead: ???";
-            arsenicText.text = "Arsenic: ???";
-            cadmiumText.text = "Cadmium: ???";
+            nitrogenText.text = "Nitrogen (N): ???";
+            potassiumText.text = "Potassium (K): ???";
+            phosphorusText.text = "Phosphorus (P): ???";
+            zincText.text = "Zinc (Zn): ???";
+            sulfurText.text = "Sulfur (S): ???";
+            manganeseText.text = "Manganese (Mn): ???";
+            boronText.text = "Boron (B): ???";
+            ironText.text = "Iron (Fe): ???";
+            leadText.text = "Lead (Pb): ???";
+            arsenicText.text = "Arsenic (As): ???";
+            cadmiumText.text = "Cadmium (Cd): ???";
         }
 
         if (selectedField.GetComponent<Field>().ReadDiscovery(3) == 1)
