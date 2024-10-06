@@ -10,6 +10,7 @@ public class ToolInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private float time = 0.3f;
 
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         StopAllCoroutines();
