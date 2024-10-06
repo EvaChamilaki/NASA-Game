@@ -41,15 +41,15 @@ public class CropInfoPanel : MonoBehaviour
         if(hoveredObject.CompareTag("Crop Information") && !mainCamera.GetComponent<MainCamera>().GetInteractionFlag())
         {
             cropInfo.text = info;
-            infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth > 400 ? 400 : cropInfo.preferredWidth, cropInfo.preferredHeight > 250 ? 250 : cropInfo.preferredHeight);
+            // infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth > 700 ? 700 : cropInfo.preferredWidth, cropInfo.preferredHeight > 400 ? 400 : cropInfo.preferredHeight);
             infoPanel.gameObject.SetActive(true);
-            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.9f);
+            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.5f);
         }
 
         else if (hoveredObject.CompareTag("Tool Information") && !mainCamera.GetComponent<MainCamera>().GetInteractionFlag())
         {
             toolsInfo.text = info;
-            toolInfoPanel.sizeDelta = new Vector2(toolsInfo.preferredWidth>250? 250: toolsInfo.preferredWidth, toolsInfo.preferredHeight > 100 ? 100: toolsInfo.preferredHeight);
+            // toolInfoPanel.sizeDelta = new Vector2(toolsInfo.preferredWidth>250? 250: toolsInfo.preferredWidth, toolsInfo.preferredHeight > 100 ? 100: toolsInfo.preferredHeight);
             toolInfoPanel.gameObject.SetActive(true);
             toolInfoPanel.transform.position = new Vector2(mousePos.x-toolInfoPanel.sizeDelta.x * 0.6f, mousePos.y+toolInfoPanel.sizeDelta.y*0.1f);
         }
