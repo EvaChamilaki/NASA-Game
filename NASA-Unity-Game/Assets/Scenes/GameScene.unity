@@ -417,6 +417,191 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Iron Fertilizer to increase concentration of Iron.
+--- !u!1 &13801153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13801154}
+  - component: {fileID: 13801159}
+  - component: {fileID: 13801158}
+  - component: {fileID: 13801157}
+  - component: {fileID: 13801156}
+  - component: {fileID: 13801155}
+  m_Layer: 5
+  m_Name: Rice Image
+  m_TagString: Crop Information
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &13801154
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957140246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 392, y: -20}
+  m_SizeDelta: {x: 90, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &13801155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 13801156}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 13801158}
+        m_TargetAssemblyTypeName: Crop, Assembly-CSharp
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &13801156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5c4a3005a8f044c46a54f29d719d0e78, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &13801157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: 'For Rice to grow, it needs concentration of N: 100-200 kg/ha, K: 50-150
+    kg/ha, P: 20-40 kg/ha, S: 10-20 mg/kg, Fe: 50-100 mg/kg and Zn: 1-3 mg/kg.  Soil
+    with Pb higher than 20-50 mg/kg, As higher than 0.2 mg/kg and Cd higher than
+    3-8 mg/kg is toxic to Rice. It needs well-drained soil, with pH between 5,5-7
+    and Organic Horizon Thickness 5-10 cm.'
+--- !u!114 &13801158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropIndex: 0
+  minpH: 5.5
+  maxpH: 7
+  drainage: 3
+  minNitrogen: 100
+  maxNitrogen: 200
+  minPotassium: 50
+  maxPotassium: 150
+  minPhosphorus: 20
+  maxPhosphorus: 40
+  minZinc: 1
+  maxZinc: 3
+  minSulfur: 10
+  maxSulfur: 20
+  minManganese: 0
+  maxManganese: 1000
+  minBoron: 0
+  maxBoron: 1000
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 5
+  maxOrganicHorizonThick: 10
+--- !u!222 &13801159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13801153}
+  m_CullTransparentMesh: 1
 --- !u!1 &69482657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3333,7 +3518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7315f964114b5a148a2efd8b0ead132f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c82a24306bf3b1948b48aa4e35621d0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7014,67 +7199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Cover to change the drainage state.
---- !u!1001 &925862478
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_Name
-      value: Wheat St1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
 --- !u!1 &961726018
 GameObject:
   m_ObjectHideFlags: 0
@@ -8768,7 +8892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolInfo: Use Tractor to change the drainage state.
+  toolInfo: 'Use Tractor to change the drainage state. '
 --- !u!1 &1134410394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
@@ -13791,6 +13915,7 @@ RectTransform:
   - {fileID: 1994653816}
   - {fileID: 456750755}
   - {fileID: 2107717100}
+  - {fileID: 13801154}
   - {fileID: 1267389320}
   - {fileID: 191688473}
   m_Father: {fileID: 1098744339}
@@ -14245,8 +14370,6 @@ GameObject:
   - component: {fileID: 2107717100}
   - component: {fileID: 2107717102}
   - component: {fileID: 2107717101}
-  - component: {fileID: 2107717103}
-  - component: {fileID: 2107717104}
   m_Layer: 5
   m_Name: Rice
   m_TagString: Untagged
@@ -14370,57 +14493,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107717099}
   m_CullTransparentMesh: 1
---- !u!114 &2107717103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107717099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: 0
-  minpH: 5.5
-  maxpH: 7
-  drainage: 3
-  minNitrogen: 100
-  maxNitrogen: 200
-  minPotassium: 50
-  maxPotassium: 150
-  minPhosphorus: 20
-  maxPhosphorus: 40
-  minZinc: 1
-  maxZinc: 3
-  minSulfur: 10
-  maxSulfur: 20
-  minManganese: 0
-  maxManganese: 1000
-  minBoron: 0
-  maxBoron: 1000
-  minIron: 50
-  maxIron: 100
-  minOrganicHorizonThick: 5
-  maxOrganicHorizonThick: 10
---- !u!114 &2107717104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107717099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Rice to grow, it needs concentration of N: 100-200 kg/ha, K: 50-150
-    kg/ha, P: 20-40 kg/ha, S: 10-20 mg/kg, Fe: 50-100 mg/kg and Zn: 1-3 mg/kg.  Soil
-    with Pb higher than 20-50 mg/kg, As higher than 0.2 mg/kg and Cd higher than
-    3-8 mg/kg is toxic to Rice. It needs well-drained soil, with pH between 5,5-7
-    and Organic Horizon Thickness 5-10 cm.'
 --- !u!1 &2134281526
 GameObject:
   m_ObjectHideFlags: 0
@@ -14555,132 +14627,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134281526}
   m_CullTransparentMesh: 1
---- !u!1001 &3755519132120943707
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806771918980613201, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2418844910331161109, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_Name
-      value: Wheat St2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2418844910331161109, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5369793613268340151, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
---- !u!1001 &6068254604025300172
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058091919696741635, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7343273179568182656, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_Name
-      value: Wheat St3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7343273179568182656, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -14691,6 +14637,3 @@ SceneRoots:
   - {fileID: 864119057}
   - {fileID: 1098744339}
   - {fileID: 553286284}
-  - {fileID: 6068254604025300172}
-  - {fileID: 3755519132120943707}
-  - {fileID: 925862478}
