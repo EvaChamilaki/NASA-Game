@@ -10248,20 +10248,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 3
-  pH: 4
-  drainage: 0
+  pH: 6
+  drainage: 1
   nitrogen: 160
   potassium: 140
-  phosphorus: 47
-  zinc: 15
-  sulfur: 20
-  manganese: 14
-  boron: 20
-  iron: 20
+  phosphorus: 55
+  zinc: 40
+  sulfur: 0
+  manganese: 20
+  boron: 0
+  iron: 0
   organicHorizonThick: 9
-  lead: 11
-  arsenic: 22
-  cadmium: 55
+  lead: 0
+  arsenic: 0
+  cadmium: 0
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5

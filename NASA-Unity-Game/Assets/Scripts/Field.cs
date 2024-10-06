@@ -164,7 +164,7 @@ public class Field : MonoBehaviour
 #endif
             return;
         }
-        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || phosphorus > plantedCrop.GetComponent<Crop>().maxZinc)
+        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || zinc > plantedCrop.GetComponent<Crop>().maxZinc)
         {
             correntPlanting = false;
 #if DEBUG_LOG
