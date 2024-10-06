@@ -24,8 +24,8 @@ public class Field : MonoBehaviour
     public float pH = 5.0f;             // lime to increase, organic to decrease
     public Drainage drainage = Drainage.CLAY_SOIL;      // tractor to change
     // All are kg per hectar
-    public float nitrogen = 0.0f;       // seaweed
-    public float potassium = 0.0f;      // manure
+    public float nitrogen = 0.0f;       // manure
+    public float potassium = 0.0f;      // seaweed
     public float phosphorus = 0.0f;     // manure
     // All are mg per kg
     public float zinc = 0.0f;           // compost
@@ -266,12 +266,12 @@ public class Field : MonoBehaviour
         switch (toolIndex)
         {
             case 0:
-                potassium += potassiumBoost;
+                nitrogen += nitrogenBoost;
                 phosphorus += phosphorusBoost;
                 break;
 
             case 1:
-                nitrogen += nitrogenBoost;
+                potassium += potassiumBoost;
                 break;
 
             case 2:
