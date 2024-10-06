@@ -151,188 +151,188 @@ public class Field : MonoBehaviour
 
         plantedCrop = crop;
 
-        // Compatibility check
-        correntPlanting = true;
-        if (pH < plantedCrop.GetComponent<Crop>().minpH || pH > plantedCrop.GetComponent<Crop>().maxpH)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//        // Compatibility check
+//        correntPlanting = true;
+//        if (pH < plantedCrop.GetComponent<Crop>().minpH || pH > plantedCrop.GetComponent<Crop>().maxpH)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (drainage != plantedCrop.GetComponent<Crop>().drainage)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (drainage != plantedCrop.GetComponent<Crop>().drainage)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (nitrogen < plantedCrop.GetComponent<Crop>().minNitrogen || nitrogen > plantedCrop.GetComponent<Crop>().maxNitrogen)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (nitrogen < plantedCrop.GetComponent<Crop>().minNitrogen || nitrogen > plantedCrop.GetComponent<Crop>().maxNitrogen)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (potassium < plantedCrop.GetComponent<Crop>().minPotassium || potassium > plantedCrop.GetComponent<Crop>().maxPotassium)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (potassium < plantedCrop.GetComponent<Crop>().minPotassium || potassium > plantedCrop.GetComponent<Crop>().maxPotassium)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (phosphorus < plantedCrop.GetComponent<Crop>().minPhosphorus || phosphorus > plantedCrop.GetComponent<Crop>().maxPhosphorus)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (phosphorus < plantedCrop.GetComponent<Crop>().minPhosphorus || phosphorus > plantedCrop.GetComponent<Crop>().maxPhosphorus)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || zinc > plantedCrop.GetComponent<Crop>().maxZinc)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || zinc > plantedCrop.GetComponent<Crop>().maxZinc)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (sulfur < plantedCrop.GetComponent<Crop>().minSulfur || sulfur > plantedCrop.GetComponent<Crop>().maxSulfur)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (sulfur < plantedCrop.GetComponent<Crop>().minSulfur || sulfur > plantedCrop.GetComponent<Crop>().maxSulfur)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (manganese < plantedCrop.GetComponent<Crop>().minManganese || manganese > plantedCrop.GetComponent<Crop>().maxManganese)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (manganese < plantedCrop.GetComponent<Crop>().minManganese || manganese > plantedCrop.GetComponent<Crop>().maxManganese)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (boron < plantedCrop.GetComponent<Crop>().minBoron || boron > plantedCrop.GetComponent<Crop>().maxBoron)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (boron < plantedCrop.GetComponent<Crop>().minBoron || boron > plantedCrop.GetComponent<Crop>().maxBoron)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (iron < plantedCrop.GetComponent<Crop>().minIron || iron > plantedCrop.GetComponent<Crop>().maxIron)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (iron < plantedCrop.GetComponent<Crop>().minIron || iron > plantedCrop.GetComponent<Crop>().maxIron)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
-        else if (organicHorizonThick < plantedCrop.GetComponent<Crop>().minOrganicHorizonThick || organicHorizonThick > plantedCrop.GetComponent<Crop>().maxOrganicHorizonThick)
-        {
-            correntPlanting = false;
-#if DEBUG_LOG
-            Debug.Log("Incompatible plant!");
-#endif
-            // Plant handling
-            currentPlanted = Instantiate(plants[27]);
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
+//        else if (organicHorizonThick < plantedCrop.GetComponent<Crop>().minOrganicHorizonThick || organicHorizonThick > plantedCrop.GetComponent<Crop>().maxOrganicHorizonThick)
+//        {
+//            correntPlanting = false;
+//#if DEBUG_LOG
+//            Debug.Log("Incompatible plant!");
+//#endif
+//            // Plant handling
+//            currentPlanted = Instantiate(plants[27]);
 
-            animationState = 0;
-            timerOn = false;
-            timerStart = Time.time;
+//            animationState = 0;
+//            timerOn = false;
+//            timerStart = Time.time;
 
-            currentPlanted.transform.position = interval;
-            return;
-        }
+//            currentPlanted.transform.position = interval;
+//            return;
+//        }
 
-#if DEBUG_LOG
-        Debug.Log("Compatible plant!");
-#endif
+//#if DEBUG_LOG
+//        Debug.Log("Compatible plant!");
+//#endif
 
         // Plant handling
         currentPlanted = Instantiate(plants[plantedCrop.GetComponent<Crop>().cropIndex * 3]);
