@@ -417,9 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Iron Fertilizer to increase concentration of Iron.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &13801153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,9 +1125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &169848295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,9 +1520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the shovel to test the drainage of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &191688472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,9 +1865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &224524593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,9 +2013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &227313089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,9 +2173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &237176372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,9 +2409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Seaweed to increase concentration of Potassium.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &265805545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,9 +2687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Reset the field to its initial state.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!114 &308126287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,9 +2932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &345222983
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,9 +3203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Remove all toxins from the field.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!114 &352014512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3459,9 +3429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Remove all toxins from the field.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!114 &353985129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3551,7 +3518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7315f964114b5a148a2efd8b0ead132f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c82a24306bf3b1948b48aa4e35621d0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4036,9 +4003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Iron Fertilizer to increase concentration of Iron.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &501909142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4187,9 +4151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Seaweed to increase concentration of Potassium.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &507714512
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,9 +4806,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Boron Fertilizer to increase concentration of Boron.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &595164226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,9 +5587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &726921842
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,9 +5881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the pH-Meter to measure the pH of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1001 &777120082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6172,9 +6124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the depth probe to measure the thickness of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &786233807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6364,9 +6313,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolInfo: Use the soil test tool to measure the concentration of nutrients in the
     field.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!114 &789634916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6659,9 +6605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the shovel to test the drainage of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &819712867
 GameObject:
   m_ObjectHideFlags: 0
@@ -7256,9 +7199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Cover to change the drainage state.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &961726018
 GameObject:
   m_ObjectHideFlags: 0
@@ -7419,9 +7359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1039370684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7582,9 +7519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Cover to change the drainage state.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1001 &1042187223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8799,9 +8733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the pH-Meter to measure the pH of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1133720343
 GameObject:
   m_ObjectHideFlags: 0
@@ -8962,9 +8893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: 'Use Tractor to change the drainage state. '
-  toolInfoTextComponent: {fileID: 584129074}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 21300000, guid: 650e96eaed63afd4c91110914567caa7, type: 3}
 --- !u!1 &1134410394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
@@ -10445,9 +10373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Compost to increase concentration of Zinc.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1333415290
 GameObject:
   m_ObjectHideFlags: 0
@@ -10730,9 +10655,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Tractor to change the drainage state.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1406415030
 GameObject:
   m_ObjectHideFlags: 0
@@ -11067,9 +10989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1434792502
 GameObject:
   m_ObjectHideFlags: 0
@@ -11230,9 +11149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Boron Fertilizer to increase concentration of Boron.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1452323588
 GameObject:
   m_ObjectHideFlags: 0
@@ -11393,9 +11309,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1484173078
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,9 +12247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolInfo: Use the soil test tool to measure the concentration of nutrients in the
     field.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1623002005
 GameObject:
   m_ObjectHideFlags: 0
@@ -12497,9 +12407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use the depth probe to measure the thickness of the soil.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1639308358
 GameObject:
   m_ObjectHideFlags: 0
@@ -12648,9 +12555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Compost to increase concentration of Zinc.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1651327153
 GameObject:
   m_ObjectHideFlags: 0
@@ -13432,9 +13336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!1 &1893270411
 GameObject:
   m_ObjectHideFlags: 0
@@ -13677,9 +13578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Reset the field to its initial state.
-  toolInfoTextComponent: {fileID: 0}
-  toolInfoImage: {fileID: 0}
-  toolSprite: {fileID: 0}
 --- !u!114 &1952776064
 MonoBehaviour:
   m_ObjectHideFlags: 0
