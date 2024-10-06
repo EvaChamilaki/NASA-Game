@@ -275,6 +275,13 @@ public class MainCamera : MonoBehaviour
         FillUI();
     }
 
+    public void PlantCrop(GameObject crop)
+    {
+        if (selectedField == null) return;
+
+        selectedField.GetComponent<Field>().PlantCrop(crop);
+    }
+
     public bool FieldIsSelected()
     {
         return (selectedField != null);
