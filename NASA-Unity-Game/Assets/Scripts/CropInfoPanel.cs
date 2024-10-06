@@ -6,7 +6,8 @@ using System;
 
 public class CropInfoPanel : MonoBehaviour
 {
-    public TMP_Text cropInfo;
+    [TextArea(3, 10)] 
+    public TextMeshProUGUI cropInfo;
     public RectTransform infoPanel;
 
     public static Action<string, Vector2> OnMouseHover; //string: the text we want to display, Vector2: the mouse position
@@ -32,10 +33,11 @@ public class CropInfoPanel : MonoBehaviour
     private void ShowInfo(string info, Vector2 mousePos)
     {
         cropInfo.text = info;
-        infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth, cropInfo.preferredHeight);
+
+        infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth >400 ? 400 : cropInfo.preferredWidth, cropInfo.preferredHeight > 200 ? 200 :cropInfo.preferredHeight);
 
         infoPanel.gameObject.SetActive(true);
-        infoPanel.transform.position = new Vector2(mousePos.x + infoPanel.sizeDelta.x * 2, mousePos.y);
+        infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y+ infoPanel.sizeDelta.y*0.5f);
     }
 
     private void HideInfo()
