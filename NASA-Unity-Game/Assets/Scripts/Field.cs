@@ -52,6 +52,9 @@ public class Field : MonoBehaviour
     public float arsenicBoost = 5.0f;
     public float cadmiumBoost = 5.0f;
 
+    [Header("El Overlay")]
+    public GameObject overlay;
+
     [Header("Do not fill!")]
     public bool selected = false;
 
@@ -74,6 +77,7 @@ public class Field : MonoBehaviour
     private float arsenicInitial = 0.0f;
     private float cadmiumInitial = 0.0f;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,6 +98,11 @@ public class Field : MonoBehaviour
         leadInitial = lead;
         arsenicInitial = arsenic;
         cadmiumInitial = cadmium;
+
+        if (overlay == null)
+            Debug.LogError("ERROR::overlay not set!");
+
+        overlay.SetActive(false);
 
     //discoveries = (short)(Mathf.Pow(2, 4) - 1);
 }
@@ -195,11 +204,13 @@ public class Field : MonoBehaviour
     public void Select()
     {
         selected = true;
+        overlay.SetActive(true);
     }
 
     public void Deselect()
     {
         selected = false;
+        overlay.SetActive(false);
     }
 
     public short ReadDiscovery(short bit_index)

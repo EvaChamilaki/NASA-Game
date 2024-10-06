@@ -182,7 +182,7 @@ public class MainCamera : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Field"))
                 if (Input.GetMouseButton(0))
                 {
-                    if (selectedFieldIndex != -1)
+                    if (selectedField != null)
                         selectedField.GetComponent<Field>().Deselect();
 
                     selectedField = hit.transform.gameObject;
