@@ -1366,20 +1366,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 1
-  pH: 9
-  drainage: 2
-  nitrogen: 2
-  potassium: 36
-  phosphorus: 78
-  zinc: 9
+  pH: 9.7
+  drainage: 3
+  nitrogen: 80
+  potassium: 70
+  phosphorus: 20
+  zinc: 30
   sulfur: 72
-  manganese: 23
-  boron: 21
-  iron: 369
-  organicHorizonThick: 29
+  manganese: 15
+  boron: 0.1
+  iron: 80
+  organicHorizonThick: 2.54
   lead: 26
-  arsenic: 97
-  cadmium: 7
+  arsenic: 0.4
+  cadmium: 2
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -2696,20 +2696,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 5
-  pH: 9
+  pH: 6
   drainage: 2
-  nitrogen: 2
-  potassium: 36
-  phosphorus: 78
-  zinc: 9
-  sulfur: 72
-  manganese: 23
-  boron: 21
-  iron: 369
-  organicHorizonThick: 29
-  lead: 26
-  arsenic: 97
-  cadmium: 7
+  nitrogen: 140
+  potassium: 110
+  phosphorus: 40
+  zinc: 25
+  sulfur: 15
+  manganese: 10
+  boron: 0.5
+  iron: 60
+  organicHorizonThick: 8
+  lead: 35
+  arsenic: 0.3
+  cadmium: 1
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -7146,20 +7146,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 2
-  pH: 8
+  pH: 4
   drainage: 3
-  nitrogen: 1
-  potassium: 4
-  phosphorus: 5
-  zinc: 8
-  sulfur: 9
-  manganese: 3
-  boron: 2
-  iron: 7
-  organicHorizonThick: 5
-  lead: 6
-  arsenic: 97
-  cadmium: 8
+  nitrogen: 130
+  potassium: 20
+  phosphorus: 90
+  zinc: 20
+  sulfur: 10
+  manganese: 20
+  boron: 0.1
+  iron: 10
+  organicHorizonThick: 18
+  lead: 70
+  arsenic: 1
+  cadmium: 4
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -8503,7 +8503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1098744336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8753,6 +8753,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 864119058}
     m_Modifications:
     - target: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: ricefield
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
       value: Field
       objectReference: {fileID: 0}
@@ -8761,8 +8765,16 @@ PrefabInstance:
       value: fields
       objectReference: {fileID: 0}
     - target: {fileID: 3552903658377334136, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: lettucefield
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552903658377334136, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
       value: Field
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: sugarcanefield
       objectReference: {fileID: 0}
     - target: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
@@ -8819,6 +8831,10 @@ PrefabInstance:
     - target: {fileID: 3664633338107110831, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: corn&carrot field
       objectReference: {fileID: 0}
     - target: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
@@ -8925,18 +8941,18 @@ MonoBehaviour:
   fieldIndex: 4
   pH: 5
   drainage: 1
-  nitrogen: 5
-  potassium: 7
-  phosphorus: 6
-  zinc: 8
+  nitrogen: 130
+  potassium: 115
+  phosphorus: 10
+  zinc: 0.5
   sulfur: 9
-  manganese: 6
-  boron: 2
-  iron: 1
-  organicHorizonThick: 25
-  lead: 11
-  arsenic: 23
-  cadmium: 12
+  manganese: 15
+  boron: 0.65
+  iron: 60
+  organicHorizonThick: 8
+  lead: 26
+  arsenic: 0.5
+  cadmium: 0.8
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -9017,18 +9033,18 @@ MonoBehaviour:
   fieldIndex: 7
   pH: 4
   drainage: 0
-  nitrogen: 6
-  potassium: 6
-  phosphorus: 7
-  zinc: 8
-  sulfur: 9
-  manganese: 7
-  boron: 7
-  iron: 8
-  organicHorizonThick: 9
-  lead: 11
-  arsenic: 22
-  cadmium: 55
+  nitrogen: 90
+  potassium: 60
+  phosphorus: 5
+  zinc: 1
+  sulfur: 5
+  manganese: 20
+  boron: 0.6
+  iron: 40
+  organicHorizonThick: 7
+  lead: 25
+  arsenic: 0.4
+  cadmium: 0.6
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -9109,18 +9125,18 @@ MonoBehaviour:
   fieldIndex: 6
   pH: 4
   drainage: 0
-  nitrogen: 6
-  potassium: 6
-  phosphorus: 7
-  zinc: 8
+  nitrogen: 80
+  potassium: 130
+  phosphorus: 15
+  zinc: 15
   sulfur: 9
-  manganese: 7
-  boron: 7
+  manganese: 30
+  boron: 0.6
   iron: 8
-  organicHorizonThick: 9
-  lead: 11
-  arsenic: 22
-  cadmium: 55
+  organicHorizonThick: 3
+  lead: 26
+  arsenic: 0.2
+  cadmium: 0.9
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -9547,20 +9563,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 0
-  pH: 5
-  drainage: 1
-  nitrogen: 5
-  potassium: 7
-  phosphorus: 6
-  zinc: 8
+  pH: 5.4
+  drainage: 2
+  nitrogen: 15
+  potassium: 50
+  phosphorus: 70
+  zinc: 10
   sulfur: 9
-  manganese: 6
+  manganese: 15
   boron: 2
-  iron: 1
-  organicHorizonThick: 25
-  lead: 11
-  arsenic: 23
-  cadmium: 12
+  iron: 40
+  organicHorizonThick: 2.9
+  lead: 30
+  arsenic: 0.05
+  cadmium: 4
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
@@ -10652,6 +10668,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2000073721}
     m_Modifications:
     - target: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: barleyfield
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804084637991599541, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
       value: Field
       objectReference: {fileID: 0}
@@ -10660,8 +10680,16 @@ PrefabInstance:
       value: fields
       objectReference: {fileID: 0}
     - target: {fileID: 3552903658377334136, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: wheatfield
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552903658377334136, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
       value: Field
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: soybeansfield
       objectReference: {fileID: 0}
     - target: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
@@ -10718,6 +10746,10 @@ PrefabInstance:
     - target: {fileID: 3664633338107110831, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      propertyPath: m_Name
+      value: pumpkinfield
       objectReference: {fileID: 0}
     - target: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
       propertyPath: m_TagString
@@ -12644,20 +12676,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldIndex: 3
-  pH: 6
+  pH: 5
   drainage: 1
-  nitrogen: 160
-  potassium: 140
-  phosphorus: 55
-  zinc: 40
-  sulfur: 0
-  manganese: 20
-  boron: 0
-  iron: 0
-  organicHorizonThick: 9
-  lead: 0
-  arsenic: 0
-  cadmium: 0
+  nitrogen: 50
+  potassium: 40
+  phosphorus: 10
+  zinc: 25
+  sulfur: 12
+  manganese: 10
+  boron: 4
+  iron: 1
+  organicHorizonThick: 4
+  lead: 12
+  arsenic: 0.3
+  cadmium: 1
   pHBoost: 1
   nitrogenBoost: 5
   potassiumBoost: 5
