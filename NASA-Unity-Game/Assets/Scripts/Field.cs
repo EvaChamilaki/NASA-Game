@@ -328,6 +328,12 @@ public class Field : MonoBehaviour
                 ResetField();
                 break;
 
+            case 12:
+                lead = 0.0002f;
+                arsenic = 0.001f;
+                cadmium = 0.003f;
+                break;
+
             default:
                 break;
         }

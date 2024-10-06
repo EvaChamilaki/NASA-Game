@@ -173,10 +173,14 @@ public class MainCamera : MonoBehaviour
 
         // Raycasting section
         RaycastHit hit;
-        int layerMask = 1 << 8;
+        int layerMask = 0;
+        layerMask = ~layerMask;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!toolInteractionFlag && Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (!toolInteractionFlag && Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
+            if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+                return;
+
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
 
             if (hit.transform.gameObject.CompareTag("Field"))
