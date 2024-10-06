@@ -3597,27 +3597,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropIndex: 0
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
+  minpH: 6.4
+  maxpH: 14
+  drainage: 1
+  minNitrogen: 150
+  maxNitrogen: 200
+  minPotassium: 30
+  maxPotassium: 70
+  minPhosphorus: 100
+  maxPhosphorus: 150
   minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
+  maxZinc: 1000
+  minSulfur: 20
+  maxSulfur: 30
   minManganese: 0
-  maxManganese: 0
+  maxManganese: 1000
   minBoron: 0
-  maxBoron: 0
+  maxBoron: 1000
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 15
+  maxOrganicHorizonThick: 30
 --- !u!114 &546457078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5576,27 +5576,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropIndex: 1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  minpH: 6
+  maxpH: 6.5
+  drainage: 1
+  minNitrogen: 150
+  maxNitrogen: 250
+  minPotassium: 80
+  maxPotassium: 150
+  minPhosphorus: 50
+  maxPhosphorus: 80
+  minZinc: 20
+  maxZinc: 50
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
   minBoron: 0
-  maxBoron: 0
+  maxBoron: 1000
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 3.8
+  maxOrganicHorizonThick: 12
 --- !u!222 &789634919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9505,28 +9505,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  cropIndex: 0
+  minpH: 6
+  maxpH: 7.5
+  drainage: 2
+  minNitrogen: 60
+  maxNitrogen: 100
+  minPotassium: 40
+  maxPotassium: 80
+  minPhosphorus: 25
+  maxPhosphorus: 50
+  minZinc: 25
+  maxZinc: 50
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
   minBoron: 0
-  maxBoron: 0
+  maxBoron: 1000
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 3
+  maxOrganicHorizonThick: 5
 --- !u!114 &1406415035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11245,7 +11245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: -1
+  cropIndex: 0
   minpH: 5
   maxpH: 10
   drainage: 0
