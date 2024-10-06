@@ -324,6 +324,10 @@ public class Field : MonoBehaviour
                 pH = Math.Max(pH - pHBoost, 0);     // pH can be less than 0, but doesn't matter in our usecase. Don't shoot me NASA!
                 break;
 
+            case 11:
+                ResetField();
+                break;
+
             default:
                 break;
         }
