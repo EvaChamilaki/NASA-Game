@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // From lowest water to highest
@@ -54,6 +55,9 @@ public class Field : MonoBehaviour
     public float arsenicBoost = 5.0f;
     public float cadmiumBoost = 5.0f;
 
+    [Header("Plant Prefabs")]
+    public GameObject[] plants = new GameObject[28];
+
     [Header("El Overlay")]
     public GameObject overlay;
 
@@ -78,6 +82,12 @@ public class Field : MonoBehaviour
     private float leadInitial = 0.0f;
     private float arsenicInitial = 0.0f;
     private float cadmiumInitial = 0.0f;
+
+    private GameObject currentPlanted;
+    private float timerStart;
+    private float delay = 2.0f;
+    private bool timerOn = false;
+    private int animationState = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -111,7 +121,22 @@ public class Field : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (timerOn && Time.time - timerStart > delay)
+        {
+            animationState++;
+
+            Destroy(currentPlanted);
+            currentPlanted = Instantiate(plants[plantedCrop.GetComponent<Crop>().cropIndex * 3 + animationState]);
+
+            timerStart = Time.time;
+
+            if (animationState == 2)
+            {
+                animationState = 0;
+                timerOn = false;
+            }
+        }
+
     }
 
     public void PlantCrop(GameObject crop)
@@ -216,6 +241,15 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Compatible plant!");
 #endif
+
+        // Plant handling
+        currentPlanted = Instantiate(plants[plantedCrop.GetComponent<Crop>().cropIndex * 3]);
+
+        animationState = 0;
+        timerOn = true;
+        timerStart = Time.time;
+
+        // TODO: Set position!
     }
 
     public void ResetField()
