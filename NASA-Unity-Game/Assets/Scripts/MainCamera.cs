@@ -61,6 +61,10 @@ public class MainCamera : MonoBehaviour
     private bool toolInteractionFlag = false;
     private float prevMousePos = 0.0f;
 
+    private float timerStart = 0.0f;
+    private float timerDelay = 1.0f;
+    private bool timerOn = false;
+
     private int selectedFieldIndex = -1;
     private GameObject selectedField;
 
@@ -77,6 +81,13 @@ public class MainCamera : MonoBehaviour
     void Update()
     {
         float dt = Time.deltaTime;
+
+        // Handle timer
+        if (timerOn && Time.time - timerStart >= timerDelay)
+        {
+            toolInteractionFlag = false;
+            timerOn = false;
+        }
 
         Vector3 newRot = mainCam.transform.rotation.eulerAngles;
 
@@ -271,6 +282,15 @@ public class MainCamera : MonoBehaviour
 
     public void SetInteractionFlag(bool flag)
     {
+        // Delay the turning-off of the flag
+        if (!flag)
+        {
+            timerStart = Time.time;
+            timerOn = true;
+
+            return;
+        }
+
         toolInteractionFlag = flag;
     }
 
