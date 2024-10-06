@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 9581836}
   - component: {fileID: 9581835}
   - component: {fileID: 9581834}
+  - component: {fileID: 9581838}
   m_Layer: 5
   m_Name: Iron Fertilizer
   m_TagString: Tool Information
@@ -403,6 +404,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9581832}
   m_CullTransparentMesh: 1
+--- !u!114 &9581838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9581832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Iron Fertilizer to increase concentration of Iron.
 --- !u!1 &69482657
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +698,7 @@ GameObject:
   - component: {fileID: 127809816}
   - component: {fileID: 127809815}
   - component: {fileID: 127809814}
+  - component: {fileID: 127809818}
   m_Layer: 5
   m_Name: Lime
   m_TagString: Tool Information
@@ -817,6 +832,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127809812}
   m_CullTransparentMesh: 1
+--- !u!114 &127809818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127809812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
 --- !u!1 &169848295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolInfo: blalblablababalbaba
+  toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
 --- !u!1 &224524593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolInfo: blalblablababalbaba
+  toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
 --- !u!1 &227313089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1512,7 @@ GameObject:
   - component: {fileID: 227313093}
   - component: {fileID: 227313092}
   - component: {fileID: 227313091}
+  - component: {fileID: 227313095}
   m_Layer: 5
   m_Name: Organic
   m_TagString: Tool Information
@@ -1617,6 +1646,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227313089}
   m_CullTransparentMesh: 1
+--- !u!114 &227313095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227313089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
 --- !u!1 &237176372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1748,7 @@ GameObject:
   - component: {fileID: 242712396}
   - component: {fileID: 242712395}
   - component: {fileID: 242712394}
+  - component: {fileID: 242712398}
   m_Layer: 5
   m_Name: Seaweed
   m_TagString: Tool Information
@@ -1839,6 +1882,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242712392}
   m_CullTransparentMesh: 1
+--- !u!114 &242712398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242712392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Seaweed to increase concentration of Potassium.
 --- !u!1 &341872509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1906,7 @@ GameObject:
   - component: {fileID: 341872510}
   - component: {fileID: 341872512}
   - component: {fileID: 341872511}
+  - component: {fileID: 341872513}
   m_Layer: 5
   m_Name: Manganese Fertilizer text
   m_TagString: Tool Information
@@ -1973,6 +2030,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341872509}
   m_CullTransparentMesh: 1
+--- !u!114 &341872513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341872509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
 --- !u!1 &346430179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2214,7 @@ GameObject:
   - component: {fileID: 495629946}
   - component: {fileID: 495629948}
   - component: {fileID: 495629947}
+  - component: {fileID: 495629949}
   m_Layer: 5
   m_Name: Iron Fertilizer text
   m_TagString: Tool Information
@@ -2267,6 +2338,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495629945}
   m_CullTransparentMesh: 1
+--- !u!114 &495629949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495629945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Iron Fertilizer to increase concentration of Iron.
 --- !u!1 &501909142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2362,7 @@ GameObject:
   - component: {fileID: 501909143}
   - component: {fileID: 501909145}
   - component: {fileID: 501909144}
+  - component: {fileID: 501909146}
   m_Layer: 5
   m_Name: Seaweed text
   m_TagString: Tool Information
@@ -2401,6 +2486,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501909142}
   m_CullTransparentMesh: 1
+--- !u!114 &501909146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501909142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Seaweed to increase concentration of Potassium.
 --- !u!1 &507714512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,14 +2975,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2930,6 +3028,7 @@ GameObject:
   - component: {fileID: 592182532}
   - component: {fileID: 592182534}
   - component: {fileID: 592182533}
+  - component: {fileID: 592182535}
   m_Layer: 5
   m_Name: Boron Fertilizer text
   m_TagString: Tool Information
@@ -3053,6 +3152,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592182531}
   m_CullTransparentMesh: 1
+--- !u!114 &592182535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592182531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Boron Fertilizer to increase concentration of Boron.
 --- !u!1 &595164226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,6 +3534,7 @@ GameObject:
   - component: {fileID: 700747386}
   - component: {fileID: 700747388}
   - component: {fileID: 700747387}
+  - component: {fileID: 700747389}
   m_Layer: 5
   m_Name: Sulfur Fertilizer text
   m_TagString: Tool Information
@@ -3545,6 +3658,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700747385}
   m_CullTransparentMesh: 1
+--- !u!114 &700747389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700747385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
 --- !u!1 &726921842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4624,6 +4750,7 @@ GameObject:
   - component: {fileID: 900983341}
   - component: {fileID: 900983343}
   - component: {fileID: 900983342}
+  - component: {fileID: 900983344}
   m_Layer: 5
   m_Name: Cover Text
   m_TagString: Tool Information
@@ -4747,6 +4874,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900983340}
   m_CullTransparentMesh: 1
+--- !u!114 &900983344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900983340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Cover to change the drainage state.
 --- !u!1 &961726018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4760,6 +4900,7 @@ GameObject:
   - component: {fileID: 961726022}
   - component: {fileID: 961726021}
   - component: {fileID: 961726020}
+  - component: {fileID: 961726024}
   m_Layer: 5
   m_Name: Manganese Fertilizer
   m_TagString: Tool Information
@@ -4893,6 +5034,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961726018}
   m_CullTransparentMesh: 1
+--- !u!114 &961726024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961726018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
 --- !u!1 &1039370684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +5060,7 @@ GameObject:
   - component: {fileID: 1039370688}
   - component: {fileID: 1039370687}
   - component: {fileID: 1039370686}
+  - component: {fileID: 1039370690}
   m_Layer: 5
   m_Name: Cover
   m_TagString: Tool Information
@@ -5039,6 +5194,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039370684}
   m_CullTransparentMesh: 1
+--- !u!114 &1039370690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039370684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Cover to change the drainage state.
 --- !u!1 &1048154599
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,6 +5932,7 @@ GameObject:
   - component: {fileID: 1133720347}
   - component: {fileID: 1133720346}
   - component: {fileID: 1133720345}
+  - component: {fileID: 1133720349}
   m_Layer: 5
   m_Name: Tractor
   m_TagString: Tool Information
@@ -5897,6 +6066,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133720343}
   m_CullTransparentMesh: 1
+--- !u!114 &1133720349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133720343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Tractor to change the drainage state.
 --- !u!1 &1134410394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
@@ -6642,6 +6824,7 @@ GameObject:
   - component: {fileID: 1331434487}
   - component: {fileID: 1331434486}
   - component: {fileID: 1331434485}
+  - component: {fileID: 1331434489}
   m_Layer: 5
   m_Name: Compost
   m_TagString: Tool Information
@@ -6775,6 +6958,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331434483}
   m_CullTransparentMesh: 1
+--- !u!114 &1331434489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331434483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Compost to increase concentration of Zinc.
 --- !u!1 &1333415290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6920,6 +7116,7 @@ GameObject:
   - component: {fileID: 1381590023}
   - component: {fileID: 1381590025}
   - component: {fileID: 1381590024}
+  - component: {fileID: 1381590026}
   m_Layer: 5
   m_Name: Tractor Text
   m_TagString: Tool Information
@@ -7043,6 +7240,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381590022}
   m_CullTransparentMesh: 1
+--- !u!114 &1381590026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381590022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Tractor to change the drainage state.
 --- !u!1 &1406415030
 GameObject:
   m_ObjectHideFlags: 0
@@ -7239,6 +7449,7 @@ GameObject:
   - component: {fileID: 1413000312}
   - component: {fileID: 1413000314}
   - component: {fileID: 1413000313}
+  - component: {fileID: 1413000315}
   m_Layer: 5
   m_Name: Lime Text
   m_TagString: Tool Information
@@ -7362,6 +7573,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413000311}
   m_CullTransparentMesh: 1
+--- !u!114 &1413000315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413000311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
 --- !u!1 &1434792502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7375,6 +7599,7 @@ GameObject:
   - component: {fileID: 1434792506}
   - component: {fileID: 1434792505}
   - component: {fileID: 1434792504}
+  - component: {fileID: 1434792508}
   m_Layer: 5
   m_Name: Boron Fertilizer
   m_TagString: Tool Information
@@ -7508,6 +7733,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434792502}
   m_CullTransparentMesh: 1
+--- !u!114 &1434792508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434792502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Boron Fertilizer to increase concentration of Boron.
 --- !u!1 &1452323588
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,6 +7759,7 @@ GameObject:
   - component: {fileID: 1452323592}
   - component: {fileID: 1452323591}
   - component: {fileID: 1452323590}
+  - component: {fileID: 1452323594}
   m_Layer: 5
   m_Name: Sulfur Fertilizer
   m_TagString: Tool Information
@@ -7654,6 +7893,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452323588}
   m_CullTransparentMesh: 1
+--- !u!114 &1452323594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452323588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
 --- !u!1 &1484173078
 GameObject:
   m_ObjectHideFlags: 0
@@ -8477,6 +8729,7 @@ GameObject:
   - component: {fileID: 1639308359}
   - component: {fileID: 1639308361}
   - component: {fileID: 1639308360}
+  - component: {fileID: 1639308362}
   m_Layer: 5
   m_Name: Compost text
   m_TagString: Tool Information
@@ -8600,6 +8853,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639308358}
   m_CullTransparentMesh: 1
+--- !u!114 &1639308362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639308358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Compost to increase concentration of Zinc.
 --- !u!1 &1651327153
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,6 +9464,7 @@ GameObject:
   - component: {fileID: 1831648387}
   - component: {fileID: 1831648389}
   - component: {fileID: 1831648388}
+  - component: {fileID: 1831648390}
   m_Layer: 5
   m_Name: Organic Text
   m_TagString: Tool Information
@@ -9323,6 +9590,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831648386}
   m_CullTransparentMesh: 1
+--- !u!114 &1831648390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831648386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
 --- !u!1 &1893270411
 GameObject:
   m_ObjectHideFlags: 0
