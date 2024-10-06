@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10669278, g: 0.509434, b: 0.12587403, a: 1}
+  m_Color: {r: 0.0799074, g: 0.4867924, b: 0.09965911, a: 0.3529412}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2610,9 +2610,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropInfo: 'For Wheat to grow, it needs concentration of N: 150-200 kg/ha, K: 30-70
-    kg/ha, P:100-150 kg/ha and S: 20-30 mg/kg. Soil with Pb higher than 100-300 mg/kg
-    and Cd higher than 3-8 mg/kg is toxic to Wheat. It needs well-drained soil, with
-    pH > 6.4 and Organic Horizon Thickness 15-30 cm.'
+    kg/ha, P: 100-150 kg/ha and S: 20-30 mg/kg. Soil with Pb higher than 100-300
+    mg/kg and Cd higher than 3-8 mg/kg is toxic to Wheat. It needs well-drained soil,
+    with pH > 6.4 and Organic Horizon Thickness 15-30 cm.'
 --- !u!1 &553286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4370,7 +4370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Soybeans to grow, they need concentration of N: 20-40 kg/ha, K:
+    60-120 kg/ha, P: 40-80 kg/ha, Mn: 20-50 mg/kg, Fe: 50-100 mg/kg and Zn: 20-50
+    mg/kg.  Soil with Pb higher than 30-50 mg/kg and Cd higher than 3-5 mg/kg is
+    toxic to Soybeans. They need well-drained soil, with pH between 6,3-6,5 and Organic
+    Horizon Thickness 2,5-3,8 cm.'
 --- !u!1 &900983340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,7 +4835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 46.4}
+  m_AnchoredPosition: {x: 0, y: 49.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048154601
@@ -4864,7 +4868,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4881,8 +4885,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5112,7 +5116,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Pumpkins to grow, they need concentration of N: 100-200 kg/ha, K:
+    80-150 kg/ha, P: 30-80 kg/ha, Mn: 20-50 mg/kg, B: 0.5-2.0 mg/kg and Zn: 20-40
+    mg/kg.  Soil with Pb higher than 30-50 mg/kg and Cd higher than 3-5 mg/kg is
+    toxic to Pumpkins. They need sandy soil, with pH around 5,7 and Organic Horizon
+    Thickness around 2,54 cm.'
 --- !u!1 &1098744335
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,7 +6171,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Carrots to grow, they need concentration of N: 80-150 kg/ha, K:
+    100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg and Zn: 10-30
+    mg/kg. Soil with Pb higher than 20-50 mg/kg, As higher than 0.2 mg/kg and Cd
+    higher than 0,5-1 mg/kg is toxic to Carrots. They need sandy soil, with pH between
+    6-7 and Organic Horizon Thickness 5-10 cm.'
 --- !u!1001 &1283984137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6971,7 +6983,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Barley to grow, it needs concentration of N: 60-100 kg/ha, K: 40-80
+    kg/ha, P: 25-50 kg/ha, Mn: 20-50 mg/kg and Zn: 25-50 mg/kg. Soil with Pb higher
+    than 30-50 mg/kg and Cd higher than 3-5 mg/kg is toxic to Barley. It needs sandy
+    soil, with pH between 6-7,5 and Organic Horizon Thickness 3-5 cm.'
 --- !u!1 &1413000311
 GameObject:
   m_ObjectHideFlags: 0
@@ -7913,7 +7928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Lettuce to grow, it needs concentration of N: 100-200 kg/ha, K:
+    100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg and Zn: 20-40
+    mg/kg.  Soil with Pb higher than 20-50 mg/kg and Cd higher than 0,5-1 mg/kg is
+    toxic to Lettuce. It needs sandy soil, with pH between 6-7 and Organic Horizon
+    Thickness 2-5 cm.'
 --- !u!1 &1578667649
 GameObject:
   m_ObjectHideFlags: 0
@@ -8521,7 +8540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Corn to grow, it needs concentration of N: 150-250 kg/ha, K: 80-150
+    kg/ha, P: 50-80 kg/ha, Mn: 20-50 mg/kg and Zn: 20-50 mg/kg.  Soil with Pb higher
+    than 30-50 mg/kg and Cd higher than 3-8 mg/kg is toxic to Corn. It needs well-drained
+    soil, with pH between 6-6,5 and Organic Horizon Thickness 3,8-12 cm.'
 --- !u!1 &1691290325
 GameObject:
   m_ObjectHideFlags: 0
@@ -9420,7 +9442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Sugarcane to grow, it needs concentration of N: 150-250 kg/ha, K:
+    120-250 kg/ha, P: 30-80 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg, Fe: 50-100 mg/kg
+    and Zn: 0,5-2 mg/kg.  Soil with Pb higher than 10-20 mg/kg and Cd higher than
+    0,5-1 mg/kg is toxic to Sugarcane. It needs silt soil with pH between 5,5-6,5
+    and Organic Horizon Thickness 5-10 cm.'
 --- !u!1001 &2000073720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9679,7 +9705,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Rice to grow, it needs concentration of N: 100-200 kg/ha, K: 50-150
+    kg/ha, P: 20-40 kg/ha, S: 10-20 mg/kg, Fe: 50-100 mg/kg and Zn: 1-3 mg/kg.  Soil
+    with Pb higher than 20-50 mg/kg, As higher than 0.2 mg/kg and Cd higher than
+    3-8 mg/kg is toxic to Rice. It needs well-drained soil, with pH between 5,5-7
+    and Organic Horizon Thickness 5-10 cm.'
 --- !u!1 &2134281526
 GameObject:
   m_ObjectHideFlags: 0
