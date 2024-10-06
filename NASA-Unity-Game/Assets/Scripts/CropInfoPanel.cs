@@ -15,6 +15,8 @@ public class CropInfoPanel : MonoBehaviour
     public static Action<GameObject, string, Vector2> OnMouseHover; //string: the text we want to display, Vector2: the mouse position
     public static Action OnMouseExit;
 
+    private GameObject mainCamera;
+
     void OnEnable()
     {
         OnMouseHover += ShowInfo;
@@ -29,6 +31,8 @@ public class CropInfoPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mainCamera = GameObject.FindWithTag("MainCamera");
+
         HideInfo();
     }
 
@@ -50,13 +54,16 @@ public class CropInfoPanel : MonoBehaviour
             toolInfoPanel.transform.position = new Vector2(mousePos.x-toolInfoPanel.sizeDelta.x * 0.6f, mousePos.y+toolInfoPanel.sizeDelta.y*0.1f);
         }
         
-
-        
-
-       
+        if (!mainCamera.GetComponent<MainCamera>().GetInteractionFlag())
+        {
+            infoPanel.gameObject.SetActive(true);
+            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.5f);
+        }
+        else
+            HideInfo();
     }
 
-    private void HideInfo()
+    public void HideInfo()
     {
         cropInfo.text = default;
         toolsInfo.text = default;
