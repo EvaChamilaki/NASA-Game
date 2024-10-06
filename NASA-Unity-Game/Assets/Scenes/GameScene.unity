@@ -270,9 +270,10 @@ GameObject:
   - component: {fileID: 9581836}
   - component: {fileID: 9581835}
   - component: {fileID: 9581834}
+  - component: {fileID: 9581838}
   m_Layer: 5
   m_Name: Iron Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,6 +404,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9581832}
   m_CullTransparentMesh: 1
+--- !u!114 &9581838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9581832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Iron Fertilizer to increase concentration of Iron.
 --- !u!1 &69482657
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,9 +698,10 @@ GameObject:
   - component: {fileID: 127809816}
   - component: {fileID: 127809815}
   - component: {fileID: 127809814}
+  - component: {fileID: 127809818}
   m_Layer: 5
   m_Name: Lime
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -817,6 +832,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127809812}
   m_CullTransparentMesh: 1
+--- !u!114 &127809818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127809812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
 --- !u!1 &169848295
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +979,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169848295}
   m_CullTransparentMesh: 1
+--- !u!1 &180744841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 609991240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &182850945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8269562830168710224, guid: 5da1b878badcf394abf353069283704e, type: 3}
@@ -1016,6 +1049,7 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  overlay: {fileID: 1556614086}
   selected: 0
 --- !u!1 &184980294
 GameObject:
@@ -1176,9 +1210,10 @@ GameObject:
   - component: {fileID: 196679093}
   - component: {fileID: 196679095}
   - component: {fileID: 196679091}
+  - component: {fileID: 196679096}
   m_Layer: 5
   m_Name: Manure
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1309,6 +1344,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolIndex: 0
+--- !u!114 &196679096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196679089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
 --- !u!1 &224524593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,9 +1368,10 @@ GameObject:
   - component: {fileID: 224524594}
   - component: {fileID: 224524596}
   - component: {fileID: 224524595}
+  - component: {fileID: 224524597}
   m_Layer: 5
   m_Name: Manure text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1443,6 +1492,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224524593}
   m_CullTransparentMesh: 1
+--- !u!114 &224524597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224524593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manure to increase the concentration of Nitrogen and Phosphorus
 --- !u!1 &227313089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,9 +1518,10 @@ GameObject:
   - component: {fileID: 227313093}
   - component: {fileID: 227313092}
   - component: {fileID: 227313091}
+  - component: {fileID: 227313095}
   m_Layer: 5
   m_Name: Organic
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1589,6 +1652,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227313089}
   m_CullTransparentMesh: 1
+--- !u!114 &227313095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227313089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
+--- !u!1 &237176372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237176373}
+  - component: {fileID: 237176375}
+  - component: {fileID: 237176374}
+  m_Layer: 5
+  m_Name: Tool Information
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &237176373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 584129072}
+  m_Father: {fileID: 1098744339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 43.30078, y: -51.531776}
+  m_SizeDelta: {x: 200, y: 62.2953}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &237176374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &237176375
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_CullTransparentMesh: 1
 --- !u!1 &242712392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,9 +1754,10 @@ GameObject:
   - component: {fileID: 242712396}
   - component: {fileID: 242712395}
   - component: {fileID: 242712394}
+  - component: {fileID: 242712398}
   m_Layer: 5
   m_Name: Seaweed
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1735,6 +1888,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242712392}
   m_CullTransparentMesh: 1
+--- !u!114 &242712398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242712392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Seaweed to increase concentration of Potassium.
 --- !u!1 &341872509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,9 +1912,10 @@ GameObject:
   - component: {fileID: 341872510}
   - component: {fileID: 341872512}
   - component: {fileID: 341872511}
+  - component: {fileID: 341872513}
   m_Layer: 5
   m_Name: Manganese Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1869,6 +2036,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341872509}
   m_CullTransparentMesh: 1
+--- !u!114 &341872513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341872509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
 --- !u!1 &346430179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +2145,7 @@ GameObject:
   - component: {fileID: 352025623}
   - component: {fileID: 352025622}
   m_Layer: 5
-  m_Name: Crop Requirements
+  m_Name: Crop Information
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,9 +2220,10 @@ GameObject:
   - component: {fileID: 495629946}
   - component: {fileID: 495629948}
   - component: {fileID: 495629947}
+  - component: {fileID: 495629949}
   m_Layer: 5
   m_Name: Iron Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2163,6 +2344,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495629945}
   m_CullTransparentMesh: 1
+--- !u!114 &495629949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495629945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Iron Fertilizer to increase concentration of Iron.
 --- !u!1 &501909142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,9 +2368,10 @@ GameObject:
   - component: {fileID: 501909143}
   - component: {fileID: 501909145}
   - component: {fileID: 501909144}
+  - component: {fileID: 501909146}
   m_Layer: 5
   m_Name: Seaweed text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2297,6 +2492,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501909142}
   m_CullTransparentMesh: 1
+--- !u!114 &501909146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501909142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Seaweed to increase concentration of Potassium.
 --- !u!1 &507714512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,9 +2649,10 @@ GameObject:
   - component: {fileID: 546457075}
   - component: {fileID: 546457077}
   - component: {fileID: 546457078}
+  - component: {fileID: 546457079}
   m_Layer: 5
   m_Name: Wheat
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2576,6 +2785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: 0
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -2681,6 +2891,140 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &584129071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584129072}
+  - component: {fileID: 584129073}
+  - component: {fileID: 584129074}
+  m_Layer: 5
+  m_Name: Information Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &584129072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237176373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.0254, y: 0}
+  m_SizeDelta: {x: 193.9493, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &584129073
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_CullTransparentMesh: 1
+--- !u!114 &584129074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 4.9091797, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &592182531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,9 +3036,10 @@ GameObject:
   - component: {fileID: 592182532}
   - component: {fileID: 592182534}
   - component: {fileID: 592182533}
+  - component: {fileID: 592182535}
   m_Layer: 5
   m_Name: Boron Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2815,6 +3160,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592182531}
   m_CullTransparentMesh: 1
+--- !u!114 &592182535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592182531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Boron Fertilizer to increase concentration of Boron.
 --- !u!1 &595164226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,6 +3263,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595164226}
   m_CullTransparentMesh: 1
+--- !u!1001 &609991240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1283984141}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0309825
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017365422
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.020343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0049087657
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50ae35ca41eb0fd44b2a96eb6838a19c, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Name
+      value: field_overlay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_TagString
+      value: Overlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+--- !u!4 &609991241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 609991240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &642495583
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,9 +3632,10 @@ GameObject:
   - component: {fileID: 700747386}
   - component: {fileID: 700747388}
   - component: {fileID: 700747387}
+  - component: {fileID: 700747389}
   m_Layer: 5
   m_Name: Sulfur Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3307,6 +3756,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700747385}
   m_CullTransparentMesh: 1
+--- !u!114 &700747389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700747385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
 --- !u!1 &726921842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,7 +4650,13 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  overlay: {fileID: 56738335}
   selected: 0
+--- !u!4 &822031045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4180927741043152834, guid: 5da1b878badcf394abf353069283704e, type: 3}
+  m_PrefabInstance: {fileID: 1283984137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &886835685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,7 +4672,7 @@ GameObject:
   - component: {fileID: 886835690}
   m_Layer: 5
   m_Name: Soybeans
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4337,6 +4805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -4386,9 +4855,10 @@ GameObject:
   - component: {fileID: 900983341}
   - component: {fileID: 900983343}
   - component: {fileID: 900983342}
+  - component: {fileID: 900983344}
   m_Layer: 5
   m_Name: Cover Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4509,6 +4979,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900983340}
   m_CullTransparentMesh: 1
+--- !u!114 &900983344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900983340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Cover to change the drainage state.
 --- !u!1 &961726018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,9 +5005,10 @@ GameObject:
   - component: {fileID: 961726022}
   - component: {fileID: 961726021}
   - component: {fileID: 961726020}
+  - component: {fileID: 961726024}
   m_Layer: 5
   m_Name: Manganese Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4655,6 +5139,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961726018}
   m_CullTransparentMesh: 1
+--- !u!114 &961726024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961726018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Manganese Fertilizer to increase concentration of Manganese.
 --- !u!1 &1039370684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,9 +5165,10 @@ GameObject:
   - component: {fileID: 1039370688}
   - component: {fileID: 1039370687}
   - component: {fileID: 1039370686}
+  - component: {fileID: 1039370690}
   m_Layer: 5
   m_Name: Cover
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4801,6 +5299,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039370684}
   m_CullTransparentMesh: 1
+--- !u!114 &1039370690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039370684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Cover to change the drainage state.
 --- !u!1 &1048154599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4813,7 +5324,7 @@ GameObject:
   - component: {fileID: 1048154602}
   - component: {fileID: 1048154601}
   m_Layer: 5
-  m_Name: Info Text
+  m_Name: Information Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4950,7 +5461,7 @@ GameObject:
   - component: {fileID: 1076257388}
   m_Layer: 5
   m_Name: Pumpkins
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5083,6 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -5136,7 +5648,7 @@ GameObject:
   - component: {fileID: 1098744340}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5221,6 +5733,7 @@ RectTransform:
   - {fileID: 346430180}
   - {fileID: 1329832452}
   - {fileID: 352025621}
+  - {fileID: 237176373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5241,7 +5754,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropInfo: {fileID: 1048154601}
+  toolsInfo: {fileID: 584129074}
   infoPanel: {fileID: 352025621}
+  toolInfoPanel: {fileID: 237176373}
 --- !u!1 &1099679709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5523,9 +6038,10 @@ GameObject:
   - component: {fileID: 1133720347}
   - component: {fileID: 1133720346}
   - component: {fileID: 1133720345}
+  - component: {fileID: 1133720349}
   m_Layer: 5
   m_Name: Tractor
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5656,6 +6172,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133720343}
   m_CullTransparentMesh: 1
+--- !u!114 &1133720349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133720343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Tractor to change the drainage state.
 --- !u!1 &1134410394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3661027794893911601, guid: 5da1b878badcf394abf353069283704e, type: 3}
@@ -5721,6 +6250,7 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  overlay: {fileID: 1770561314}
   selected: 0
 --- !u!1 &1148427503
 GameObject:
@@ -5990,6 +6520,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205612266}
   m_CullTransparentMesh: 1
+--- !u!1001 &1221258428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1283984140}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0309825
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017365422
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.020343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0049087657
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50ae35ca41eb0fd44b2a96eb6838a19c, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Name
+      value: field_overlay (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_TagString
+      value: Overlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+--- !u!4 &1221258429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1221258428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1267389319
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,7 +6625,7 @@ GameObject:
   - component: {fileID: 1267389324}
   m_Layer: 5
   m_Name: Carrot
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6138,6 +6758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -6258,7 +6879,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4180927741043152834, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1812727827}
+    - targetCorrespondingSourceObject: {fileID: 3288134274362779407, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 609991241}
+    - targetCorrespondingSourceObject: {fileID: 4144795780744211595, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1221258429}
+    - targetCorrespondingSourceObject: {fileID: 8757446532301227754, guid: 5da1b878badcf394abf353069283704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1564289189}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3552903658377334136, guid: 5da1b878badcf394abf353069283704e, type: 3}
       insertIndex: -1
@@ -6290,6 +6923,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3664633338107110831, guid: 5da1b878badcf394abf353069283704e, type: 3}
   m_PrefabInstance: {fileID: 1283984137}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1283984139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8757446532301227754, guid: 5da1b878badcf394abf353069283704e, type: 3}
+  m_PrefabInstance: {fileID: 1283984137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1283984140 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4144795780744211595, guid: 5da1b878badcf394abf353069283704e, type: 3}
+  m_PrefabInstance: {fileID: 1283984137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1283984141 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3288134274362779407, guid: 5da1b878badcf394abf353069283704e, type: 3}
+  m_PrefabInstance: {fileID: 1283984137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329832451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6303,7 +6951,7 @@ GameObject:
   - component: {fileID: 1329832453}
   m_Layer: 5
   m_Name: Farmer's Tools
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6401,9 +7049,10 @@ GameObject:
   - component: {fileID: 1331434487}
   - component: {fileID: 1331434486}
   - component: {fileID: 1331434485}
+  - component: {fileID: 1331434489}
   m_Layer: 5
   m_Name: Compost
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6534,6 +7183,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331434483}
   m_CullTransparentMesh: 1
+--- !u!114 &1331434489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331434483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Compost to increase concentration of Zinc.
 --- !u!1 &1333415290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,9 +7341,10 @@ GameObject:
   - component: {fileID: 1381590023}
   - component: {fileID: 1381590025}
   - component: {fileID: 1381590024}
+  - component: {fileID: 1381590026}
   m_Layer: 5
   m_Name: Tractor Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6802,6 +7465,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381590022}
   m_CullTransparentMesh: 1
+--- !u!114 &1381590026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381590022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Tractor to change the drainage state.
 --- !u!1 &1406415030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,7 +7493,7 @@ GameObject:
   - component: {fileID: 1406415035}
   m_Layer: 5
   m_Name: Barley
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6950,6 +7626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -6998,9 +7675,10 @@ GameObject:
   - component: {fileID: 1413000312}
   - component: {fileID: 1413000314}
   - component: {fileID: 1413000313}
+  - component: {fileID: 1413000315}
   m_Layer: 5
   m_Name: Lime Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7121,6 +7799,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413000311}
   m_CullTransparentMesh: 1
+--- !u!114 &1413000315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413000311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Lime to increase the pH of the soil (make it more acidic).
 --- !u!1 &1434792502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7134,9 +7825,10 @@ GameObject:
   - component: {fileID: 1434792506}
   - component: {fileID: 1434792505}
   - component: {fileID: 1434792504}
+  - component: {fileID: 1434792508}
   m_Layer: 5
   m_Name: Boron Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7267,6 +7959,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434792502}
   m_CullTransparentMesh: 1
+--- !u!114 &1434792508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434792502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Boron Fertilizer to increase concentration of Boron.
 --- !u!1 &1452323588
 GameObject:
   m_ObjectHideFlags: 0
@@ -7280,9 +7985,10 @@ GameObject:
   - component: {fileID: 1452323592}
   - component: {fileID: 1452323591}
   - component: {fileID: 1452323590}
+  - component: {fileID: 1452323594}
   m_Layer: 5
   m_Name: Sulfur Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7413,6 +8119,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452323588}
   m_CullTransparentMesh: 1
+--- !u!114 &1452323594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452323588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Sulfur Fertilizer to increase concentration of Sulfur.
 --- !u!1 &1484173078
 GameObject:
   m_ObjectHideFlags: 0
@@ -7746,7 +8465,13 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  overlay: {fileID: 180744841}
   selected: 0
+--- !u!1 &1556614086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1564289188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1563268270
 GameObject:
   m_ObjectHideFlags: 0
@@ -7762,7 +8487,7 @@ GameObject:
   - component: {fileID: 1563268275}
   m_Layer: 5
   m_Name: Lettuce
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7895,6 +8620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -7928,6 +8654,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropInfo: 
+--- !u!1001 &1564289188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1283984139}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0309825
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017365422
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.020343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0049087657
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50ae35ca41eb0fd44b2a96eb6838a19c, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Name
+      value: field_overlay (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_TagString
+      value: Overlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+--- !u!4 &1564289189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1564289188}
+  m_PrefabAsset: {fileID: 0}
   cropInfo: 'For Lettuce to grow, it needs concentration of N: 100-200 kg/ha, K:
     100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg and Zn: 20-40
     mg/kg.  Soil with Pb higher than 20-50 mg/kg and Cd higher than 0,5-1 mg/kg is
@@ -8236,9 +9053,10 @@ GameObject:
   - component: {fileID: 1639308359}
   - component: {fileID: 1639308361}
   - component: {fileID: 1639308360}
+  - component: {fileID: 1639308362}
   m_Layer: 5
   m_Name: Compost text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8359,6 +9177,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639308358}
   m_CullTransparentMesh: 1
+--- !u!114 &1639308362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639308358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Compost to increase concentration of Zinc.
 --- !u!1 &1651327153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,7 +9205,7 @@ GameObject:
   - component: {fileID: 1651327158}
   m_Layer: 5
   m_Name: Corn
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8507,6 +9338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -8946,6 +9778,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760873161}
   m_CullTransparentMesh: 1
+--- !u!1 &1770561314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1221258428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1812727826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 822031045}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0309825
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017365422
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.020343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000010553814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0049087657
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000014047673
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50ae35ca41eb0fd44b2a96eb6838a19c, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Name
+      value: field_overlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+      propertyPath: m_TagString
+      value: Overlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+--- !u!4 &1812727827 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1812727826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1831648386
 GameObject:
   m_ObjectHideFlags: 0
@@ -8957,9 +9884,10 @@ GameObject:
   - component: {fileID: 1831648387}
   - component: {fileID: 1831648389}
   - component: {fileID: 1831648388}
+  - component: {fileID: 1831648390}
   m_Layer: 5
   m_Name: Organic Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9082,6 +10010,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831648386}
   m_CullTransparentMesh: 1
+--- !u!114 &1831648390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831648386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: Use Organic matter to decrease the pH of the soil (make it more basic).
 --- !u!1 &1893270411
 GameObject:
   m_ObjectHideFlags: 0
@@ -9189,7 +10130,7 @@ GameObject:
   - component: {fileID: 1957140247}
   m_Layer: 5
   m_Name: Crop Information
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9276,7 +10217,7 @@ GameObject:
   - component: {fileID: 1994653820}
   m_Layer: 5
   m_Name: Sugarcane
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9409,6 +10350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
@@ -9539,7 +10481,7 @@ GameObject:
   - component: {fileID: 2107717104}
   m_Layer: 5
   m_Name: Rice
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9672,6 +10614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropIndex: -1
   minpH: 5
   maxpH: 10
   drainage: 0
