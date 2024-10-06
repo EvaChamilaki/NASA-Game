@@ -132,7 +132,7 @@ public class Field : MonoBehaviour
 #endif
             return;
         }
-        else if (drainage == plantedCrop.GetComponent<Crop>().drainage)
+        else if (drainage != plantedCrop.GetComponent<Crop>().drainage)
         {
             correntPlanting = false;
 #if DEBUG_LOG
@@ -164,7 +164,7 @@ public class Field : MonoBehaviour
 #endif
             return;
         }
-        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || phosphorus > plantedCrop.GetComponent<Crop>().maxZinc)
+        else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || zinc > plantedCrop.GetComponent<Crop>().maxZinc)
         {
             correntPlanting = false;
 #if DEBUG_LOG
@@ -326,6 +326,12 @@ public class Field : MonoBehaviour
 
             case 11:
                 ResetField();
+                break;
+
+            case 12:
+                lead = 0.0002f;
+                arsenic = 0.001f;
+                cadmium = 0.003f;
                 break;
 
             default:

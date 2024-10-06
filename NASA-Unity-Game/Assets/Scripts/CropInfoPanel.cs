@@ -43,7 +43,7 @@ public class CropInfoPanel : MonoBehaviour
             cropInfo.text = info;
             infoPanel.sizeDelta = new Vector2(cropInfo.preferredWidth > 400 ? 400 : cropInfo.preferredWidth, cropInfo.preferredHeight > 250 ? 250 : cropInfo.preferredHeight);
             infoPanel.gameObject.SetActive(true);
-            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.5f);
+            infoPanel.transform.position = new Vector2(mousePos.x, mousePos.y + infoPanel.sizeDelta.y * 0.9f);
         }
 
         else if (hoveredObject.CompareTag("Tool Information") && !mainCamera.GetComponent<MainCamera>().GetInteractionFlag())
