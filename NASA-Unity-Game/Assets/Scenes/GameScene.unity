@@ -3249,7 +3249,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584129071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4982,7 +4982,7 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
-  overlay: {fileID: 1254809112}
+  overlay: {fileID: 1075401999}
   selected: 0
 --- !u!4 &822031045 stripped
 Transform:
@@ -5670,7 +5670,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048154599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5778,6 +5778,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048154599}
   m_CullTransparentMesh: 1
+--- !u!1 &1075401999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
+  m_PrefabInstance: {fileID: 1812727826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076257383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8993,7 +8998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropInfo: 
+  cropInfo: 'For Lettuce to grow, they need concentration of N: 100-200 kg/ha, K:
+    100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0.5-1.0 mg/kg and Zn: 20-40
+    mg/kg.  Soil with Pb higher than 20-50 mg/kg and Cd higher than 0,5-1 mg/kg is
+    toxic to Lettuce. It needs sandy soil , with pH between 6-7 and Organic Horizon
+    Thickness between 5-10 cm.'
 --- !u!1001 &1564289188
 PrefabInstance:
   m_ObjectHideFlags: 0
