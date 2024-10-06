@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 9581834}
   m_Layer: 5
   m_Name: Iron Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 127809814}
   m_Layer: 5
   m_Name: Lime
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,9 +1176,10 @@ GameObject:
   - component: {fileID: 196679093}
   - component: {fileID: 196679095}
   - component: {fileID: 196679091}
+  - component: {fileID: 196679096}
   m_Layer: 5
   m_Name: Manure
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1309,6 +1310,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolIndex: 0
+--- !u!114 &196679096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196679089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: blalblablababalbaba
 --- !u!1 &224524593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,9 +1334,10 @@ GameObject:
   - component: {fileID: 224524594}
   - component: {fileID: 224524596}
   - component: {fileID: 224524595}
+  - component: {fileID: 224524597}
   m_Layer: 5
   m_Name: Manure text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1443,6 +1458,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224524593}
   m_CullTransparentMesh: 1
+--- !u!114 &224524597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224524593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a284689e87604ff419c65174330a8c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolInfo: blalblablababalbaba
 --- !u!1 &227313089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1486,7 @@ GameObject:
   - component: {fileID: 227313091}
   m_Layer: 5
   m_Name: Organic
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1589,6 +1617,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227313089}
   m_CullTransparentMesh: 1
+--- !u!1 &237176372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237176373}
+  - component: {fileID: 237176375}
+  - component: {fileID: 237176374}
+  m_Layer: 5
+  m_Name: Tool Information
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &237176373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 584129072}
+  m_Father: {fileID: 1098744339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 43.30078, y: -51.531776}
+  m_SizeDelta: {x: 200, y: 62.2953}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &237176374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &237176375
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237176372}
+  m_CullTransparentMesh: 1
 --- !u!1 &242712392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1708,7 @@ GameObject:
   - component: {fileID: 242712394}
   m_Layer: 5
   m_Name: Seaweed
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1748,7 +1852,7 @@ GameObject:
   - component: {fileID: 341872511}
   m_Layer: 5
   m_Name: Manganese Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1965,7 +2069,7 @@ GameObject:
   - component: {fileID: 352025623}
   - component: {fileID: 352025622}
   m_Layer: 5
-  m_Name: Crop Requirements
+  m_Name: Crop Information
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,7 +2146,7 @@ GameObject:
   - component: {fileID: 495629947}
   m_Layer: 5
   m_Name: Iron Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2176,7 +2280,7 @@ GameObject:
   - component: {fileID: 501909144}
   m_Layer: 5
   m_Name: Seaweed text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2443,7 +2547,7 @@ GameObject:
   - component: {fileID: 546457078}
   m_Layer: 5
   m_Name: Wheat
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2681,6 +2785,140 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &584129071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584129072}
+  - component: {fileID: 584129073}
+  - component: {fileID: 584129074}
+  m_Layer: 5
+  m_Name: Information Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &584129072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237176373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.0254, y: 0}
+  m_SizeDelta: {x: 193.9493, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &584129073
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_CullTransparentMesh: 1
+--- !u!114 &584129074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584129071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 4.9091797, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &592182531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,7 +2932,7 @@ GameObject:
   - component: {fileID: 592182533}
   m_Layer: 5
   m_Name: Boron Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3186,7 +3424,7 @@ GameObject:
   - component: {fileID: 700747387}
   m_Layer: 5
   m_Name: Sulfur Fertilizer text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4204,7 +4442,7 @@ GameObject:
   - component: {fileID: 886835690}
   m_Layer: 5
   m_Name: Soybeans
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4388,7 +4626,7 @@ GameObject:
   - component: {fileID: 900983342}
   m_Layer: 5
   m_Name: Cover Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4524,7 +4762,7 @@ GameObject:
   - component: {fileID: 961726020}
   m_Layer: 5
   m_Name: Manganese Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4670,7 +4908,7 @@ GameObject:
   - component: {fileID: 1039370686}
   m_Layer: 5
   m_Name: Cover
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4813,7 +5051,7 @@ GameObject:
   - component: {fileID: 1048154602}
   - component: {fileID: 1048154601}
   m_Layer: 5
-  m_Name: Info Text
+  m_Name: Information Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4950,7 +5188,7 @@ GameObject:
   - component: {fileID: 1076257388}
   m_Layer: 5
   m_Name: Pumpkins
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5221,6 +5459,7 @@ RectTransform:
   - {fileID: 346430180}
   - {fileID: 1329832452}
   - {fileID: 352025621}
+  - {fileID: 237176373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5241,7 +5480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropInfo: {fileID: 1048154601}
+  toolsInfo: {fileID: 584129074}
   infoPanel: {fileID: 352025621}
+  toolInfoPanel: {fileID: 237176373}
 --- !u!1 &1099679709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,7 +5766,7 @@ GameObject:
   - component: {fileID: 1133720345}
   m_Layer: 5
   m_Name: Tractor
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6005,7 +6246,7 @@ GameObject:
   - component: {fileID: 1267389324}
   m_Layer: 5
   m_Name: Carrot
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6303,7 +6544,7 @@ GameObject:
   - component: {fileID: 1329832453}
   m_Layer: 5
   m_Name: Farmer's Tools
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6403,7 +6644,7 @@ GameObject:
   - component: {fileID: 1331434485}
   m_Layer: 5
   m_Name: Compost
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6681,7 +6922,7 @@ GameObject:
   - component: {fileID: 1381590024}
   m_Layer: 5
   m_Name: Tractor Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6817,7 +7058,7 @@ GameObject:
   - component: {fileID: 1406415035}
   m_Layer: 5
   m_Name: Barley
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7000,7 +7241,7 @@ GameObject:
   - component: {fileID: 1413000313}
   m_Layer: 5
   m_Name: Lime Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7136,7 +7377,7 @@ GameObject:
   - component: {fileID: 1434792504}
   m_Layer: 5
   m_Name: Boron Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7282,7 +7523,7 @@ GameObject:
   - component: {fileID: 1452323590}
   m_Layer: 5
   m_Name: Sulfur Fertilizer
-  m_TagString: Tool
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7762,7 +8003,7 @@ GameObject:
   - component: {fileID: 1563268275}
   m_Layer: 5
   m_Name: Lettuce
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8238,7 +8479,7 @@ GameObject:
   - component: {fileID: 1639308360}
   m_Layer: 5
   m_Name: Compost text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8374,7 +8615,7 @@ GameObject:
   - component: {fileID: 1651327158}
   m_Layer: 5
   m_Name: Corn
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8959,7 +9200,7 @@ GameObject:
   - component: {fileID: 1831648388}
   m_Layer: 5
   m_Name: Organic Text
-  m_TagString: Untagged
+  m_TagString: Tool Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9189,7 +9430,7 @@ GameObject:
   - component: {fileID: 1957140247}
   m_Layer: 5
   m_Name: Crop Information
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9276,7 +9517,7 @@ GameObject:
   - component: {fileID: 1994653820}
   m_Layer: 5
   m_Name: Sugarcane
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9539,7 +9780,7 @@ GameObject:
   - component: {fileID: 2107717104}
   m_Layer: 5
   m_Name: Rice
-  m_TagString: Untagged
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
