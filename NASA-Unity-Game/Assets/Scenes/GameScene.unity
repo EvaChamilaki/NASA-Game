@@ -1144,6 +1144,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 1556614086}
   selected: 0
 --- !u!1 &184980294
@@ -2370,6 +2399,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 85928052}
   selected: 0
 --- !u!65 &305864011
@@ -3582,7 +3640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 0
+  cropIndex: 6
   minpH: 5.5
   maxpH: 6.5
   drainage: 3
@@ -4898,7 +4956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 8
+  cropIndex: 5
   minpH: 6
   maxpH: 7
   drainage: 2
@@ -6154,7 +6212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 1
+  cropIndex: 2
   minpH: 6
   maxpH: 6.5
   drainage: 1
@@ -6561,6 +6619,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 1075401999}
   selected: 0
 --- !u!4 &822031045 stripped
@@ -6927,6 +7014,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolInfo: Use Cover to change the drainage state.
+--- !u!1001 &925862478
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108853586467100132, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_Name
+      value: Wheat St1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
 --- !u!1 &961726018
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,6 +8227,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 1928361929}
   selected: 0
 --- !u!65 &1111384297
@@ -8141,6 +8318,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 4287898572864842210, guid: 0053065b6ac772f4b9afac8ba27649d8, type: 3}
+  - {fileID: 2418844910331161109, guid: eaaac5fa1615c4249a745fcecc28e888, type: 3}
+  - {fileID: 7343273179568182656, guid: c0efc1a0708f0b24894dec5f718dc363, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 777120084}
   selected: 0
 --- !u!65 &1111384299
@@ -8203,6 +8409,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 1042187225}
   selected: 0
 --- !u!65 &1111384301
@@ -8599,6 +8834,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 1770561314}
   selected: 0
 --- !u!1 &1148427503
@@ -9388,7 +9652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 0
+  cropIndex: 3
   minpH: 6.3
   maxpH: 6.5
   drainage: 1
@@ -11209,7 +11473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 0
+  cropIndex: 1
   minpH: 6
   maxpH: 7.5
   drainage: 2
@@ -11438,6 +11702,35 @@ MonoBehaviour:
   leadBoost: 5
   arsenicBoost: 5
   cadmiumBoost: 5
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   overlay: {fileID: 180744841}
   selected: 0
 --- !u!1 &1556614086 stripped
@@ -13748,7 +14041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: 2
+  cropIndex: 4
   minpH: 5.5
   maxpH: 6
   drainage: 2
