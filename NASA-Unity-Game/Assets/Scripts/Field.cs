@@ -58,6 +58,9 @@ public class Field : MonoBehaviour
     [Header("Plant Prefabs")]
     public GameObject[] plants = new GameObject[28];
 
+    [Header("Plant interval")]
+    public Vector3 interval;
+
     [Header("El Overlay")]
     public GameObject overlay;
 
@@ -127,6 +130,7 @@ public class Field : MonoBehaviour
 
             Destroy(currentPlanted);
             currentPlanted = Instantiate(plants[plantedCrop.GetComponent<Crop>().cropIndex * 3 + animationState]);
+            currentPlanted.transform.position = interval;
 
             timerStart = Time.time;
 
@@ -152,9 +156,17 @@ public class Field : MonoBehaviour
         if (pH < plantedCrop.GetComponent<Crop>().minpH || pH > plantedCrop.GetComponent<Crop>().maxpH)
         {
             correntPlanting = false;
-            #if DEBUG_LOG
-                        Debug.Log("Incompatible plant!");
+#if DEBUG_LOG
+            Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (drainage != plantedCrop.GetComponent<Crop>().drainage)
@@ -163,6 +175,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (nitrogen < plantedCrop.GetComponent<Crop>().minNitrogen || nitrogen > plantedCrop.GetComponent<Crop>().maxNitrogen)
@@ -171,6 +191,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (potassium < plantedCrop.GetComponent<Crop>().minPotassium || potassium > plantedCrop.GetComponent<Crop>().maxPotassium)
@@ -179,6 +207,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (phosphorus < plantedCrop.GetComponent<Crop>().minPhosphorus || phosphorus > plantedCrop.GetComponent<Crop>().maxPhosphorus)
@@ -187,6 +223,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (zinc < plantedCrop.GetComponent<Crop>().minZinc || zinc > plantedCrop.GetComponent<Crop>().maxZinc)
@@ -195,6 +239,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (sulfur < plantedCrop.GetComponent<Crop>().minSulfur || sulfur > plantedCrop.GetComponent<Crop>().maxSulfur)
@@ -203,6 +255,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (manganese < plantedCrop.GetComponent<Crop>().minManganese || manganese > plantedCrop.GetComponent<Crop>().maxManganese)
@@ -211,6 +271,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (boron < plantedCrop.GetComponent<Crop>().minBoron || boron > plantedCrop.GetComponent<Crop>().maxBoron)
@@ -219,6 +287,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (iron < plantedCrop.GetComponent<Crop>().minIron || iron > plantedCrop.GetComponent<Crop>().maxIron)
@@ -227,6 +303,14 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
         else if (organicHorizonThick < plantedCrop.GetComponent<Crop>().minOrganicHorizonThick || organicHorizonThick > plantedCrop.GetComponent<Crop>().maxOrganicHorizonThick)
@@ -235,11 +319,19 @@ public class Field : MonoBehaviour
 #if DEBUG_LOG
             Debug.Log("Incompatible plant!");
 #endif
+            // Plant handling
+            currentPlanted = Instantiate(plants[27]);
+
+            animationState = 0;
+            timerOn = false;
+            timerStart = Time.time;
+
+            currentPlanted.transform.position = interval;
             return;
         }
 
 #if DEBUG_LOG
-            Debug.Log("Compatible plant!");
+        Debug.Log("Compatible plant!");
 #endif
 
         // Plant handling
@@ -249,13 +341,17 @@ public class Field : MonoBehaviour
         timerOn = true;
         timerStart = Time.time;
 
-        // TODO: Set position!
+        currentPlanted.transform.position = interval;
     }
 
     public void ResetField()
     {
+        animationState = 0;
+        timerOn = false;
+        Destroy(currentPlanted);
         plantedCrop = null;
         correntPlanting = false;
+        currentPlanted = null;
 
         pH = pHInitial;
         drainage = drainageInitial;
