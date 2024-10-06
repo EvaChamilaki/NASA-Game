@@ -132,7 +132,7 @@ public class Field : MonoBehaviour
 #endif
             return;
         }
-        else if (drainage == plantedCrop.GetComponent<Crop>().drainage)
+        else if (drainage != plantedCrop.GetComponent<Crop>().drainage)
         {
             correntPlanting = false;
 #if DEBUG_LOG

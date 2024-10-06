@@ -1406,27 +1406,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropIndex: 8
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  minpH: 6
+  maxpH: 7
+  drainage: 2
+  minNitrogen: 80
+  maxNitrogen: 150
+  minPotassium: 100
+  maxPotassium: 150
+  minPhosphorus: 30
+  maxPhosphorus: 50
+  minZinc: 10
+  maxZinc: 30
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0.5
+  maxBoron: 1
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 5
+  maxOrganicHorizonThick: 10
 --- !u!222 &191688477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4306,7 +4306,7 @@ MonoBehaviour:
     100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0.5-1.0 mg/kg and Zn: 20-40
     mg/kg.  Soil with Pb higher than 20-50 mg/kg and Cd higher than 0,5-1 mg/kg is
     toxic to Lettuce. It needs sandy soil , with pH between 6-7 and Organic Horizon
-    Thickness between 5-10 cm.'
+    Thickness between 2-5 cm.'
 --- !u!114 &620670257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4320,27 +4320,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropIndex: 8
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  minpH: 6
+  maxpH: 7
+  drainage: 2
+  minNitrogen: 100
+  maxNitrogen: 200
+  minPotassium: 100
+  maxPotassium: 150
+  minPhosphorus: 30
+  maxPhosphorus: 50
+  minZinc: 20
+  maxZinc: 40
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0.5
+  maxBoron: 1
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 2
+  maxOrganicHorizonThick: 5
 --- !u!222 &620670258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6214,28 +6214,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  cropIndex: 0
+  minpH: 6.3
+  maxpH: 6.5
+  drainage: 1
+  minNitrogen: 20
+  maxNitrogen: 40
+  minPotassium: 60
+  maxPotassium: 120
+  minPhosphorus: 40
+  maxPhosphorus: 80
+  minZinc: 20
+  maxZinc: 50
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
   minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxBoron: 1000
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 2.5
+  maxOrganicHorizonThick: 3.8
 --- !u!114 &886835690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6966,7 +6966,6 @@ GameObject:
   - component: {fileID: 1076257384}
   - component: {fileID: 1076257386}
   - component: {fileID: 1076257385}
-  - component: {fileID: 1076257387}
   - component: {fileID: 1076257388}
   m_Layer: 5
   m_Name: Pumpkins
@@ -7091,40 +7090,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076257383}
   m_CullTransparentMesh: 1
---- !u!114 &1076257387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076257383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
 --- !u!114 &1076257388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8496,7 +8461,6 @@ GameObject:
   - component: {fileID: 1267389320}
   - component: {fileID: 1267389322}
   - component: {fileID: 1267389321}
-  - component: {fileID: 1267389323}
   - component: {fileID: 1267389324}
   m_Layer: 5
   m_Name: Carrot
@@ -8621,40 +8585,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267389319}
   m_CullTransparentMesh: 1
---- !u!114 &1267389323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267389319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
 --- !u!114 &1267389324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10320,14 +10250,14 @@ MonoBehaviour:
   fieldIndex: 3
   pH: 4
   drainage: 0
-  nitrogen: 6
-  potassium: 6
-  phosphorus: 7
-  zinc: 8
-  sulfur: 9
-  manganese: 7
-  boron: 7
-  iron: 8
+  nitrogen: 160
+  potassium: 140
+  phosphorus: 47
+  zinc: 15
+  sulfur: 20
+  manganese: 14
+  boron: 20
+  iron: 20
   organicHorizonThick: 9
   lead: 11
   arsenic: 22
@@ -10362,7 +10292,6 @@ GameObject:
   - component: {fileID: 1563268271}
   - component: {fileID: 1563268273}
   - component: {fileID: 1563268272}
-  - component: {fileID: 1563268274}
   - component: {fileID: 1563268275}
   m_Layer: 5
   m_Name: Lettuce
@@ -10487,40 +10416,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563268270}
   m_CullTransparentMesh: 1
---- !u!114 &1563268274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563268270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
 --- !u!114 &1563268275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11108,7 +11003,6 @@ GameObject:
   - component: {fileID: 1651327154}
   - component: {fileID: 1651327156}
   - component: {fileID: 1651327155}
-  - component: {fileID: 1651327157}
   - component: {fileID: 1651327158}
   m_Layer: 5
   m_Name: Corn
@@ -11233,40 +11127,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651327153}
   m_CullTransparentMesh: 1
---- !u!114 &1651327157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651327153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: 0
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
 --- !u!114 &1651327158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12516,28 +12376,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  cropIndex: 0
+  minpH: 5.5
+  maxpH: 6.5
+  drainage: 3
+  minNitrogen: 150
+  maxNitrogen: 250
+  minPotassium: 120
+  maxPotassium: 250
+  minPhosphorus: 30
+  maxPhosphorus: 80
+  minZinc: 0.5
+  maxZinc: 2
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0.5
+  maxBoron: 1
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 5
+  maxOrganicHorizonThick: 10
 --- !u!114 &1994653820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12625,27 +12485,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cropIndex: 2
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
+  minpH: 5.5
+  maxpH: 6
+  drainage: 2
+  minNitrogen: 100
+  maxNitrogen: 200
+  minPotassium: 80
+  maxPotassium: 150
+  minPhosphorus: 30
+  maxPhosphorus: 80
+  minZinc: 20
+  maxZinc: 40
   minSulfur: 0
-  maxSulfur: 0
-  minManganese: 0
-  maxManganese: 0
-  minBoron: 0
-  maxBoron: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0.5
+  maxBoron: 2
   minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 2.4
+  maxOrganicHorizonThick: 2.7
 --- !u!222 &1999044164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12965,28 +12825,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropIndex: -1
-  minpH: 5
-  maxpH: 10
-  drainage: 0
-  minNitrogen: 0
-  maxNitrogen: 0
-  minPotassium: 0
-  maxPotassium: 0
-  minPhosphorus: 0
-  maxPhosphorus: 0
-  minZinc: 0
-  maxZinc: 0
-  minSulfur: 0
-  maxSulfur: 0
+  cropIndex: 0
+  minpH: 5.5
+  maxpH: 7
+  drainage: 3
+  minNitrogen: 100
+  maxNitrogen: 200
+  minPotassium: 50
+  maxPotassium: 150
+  minPhosphorus: 20
+  maxPhosphorus: 40
+  minZinc: 1
+  maxZinc: 3
+  minSulfur: 10
+  maxSulfur: 20
   minManganese: 0
-  maxManganese: 0
+  maxManganese: 1000
   minBoron: 0
-  maxBoron: 0
-  minIron: 0
-  maxIron: 0
-  minOrganicHorizonThick: 0
-  maxOrganicHorizonThick: 0
+  maxBoron: 1000
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 5
+  maxOrganicHorizonThick: 10
 --- !u!114 &2107717104
 MonoBehaviour:
   m_ObjectHideFlags: 0
