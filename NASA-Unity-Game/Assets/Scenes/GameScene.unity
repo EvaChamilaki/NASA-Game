@@ -3293,6 +3293,191 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353985126}
   m_CullTransparentMesh: 1
+--- !u!1 &456750754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456750755}
+  - component: {fileID: 456750760}
+  - component: {fileID: 456750759}
+  - component: {fileID: 456750758}
+  - component: {fileID: 456750757}
+  - component: {fileID: 456750756}
+  m_Layer: 5
+  m_Name: Sugarcane Image
+  m_TagString: Crop Information
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &456750755
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957140246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 264, y: -20}
+  m_SizeDelta: {x: 90, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &456750756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 456750757}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 456750759}
+        m_TargetAssemblyTypeName: Crop, Assembly-CSharp
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &456750757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5da4dbd73167eaa41a8b09971217c480, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &456750758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: 'For Sugarcane to grow, it needs concentration of N: 150-250 kg/ha, K:
+    120-250 kg/ha, P: 30-80 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg, Fe: 50-100 mg/kg
+    and Zn: 0,5-2 mg/kg.  Soil with Pb higher than 10-20 mg/kg and Cd higher than
+    0,5-1 mg/kg is toxic to Sugarcane. It needs silt soil with pH between 5,5-6,5
+    and Organic Horizon Thickness 5-10 cm.'
+--- !u!114 &456750759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropIndex: 0
+  minpH: 5.5
+  maxpH: 6.5
+  drainage: 3
+  minNitrogen: 150
+  maxNitrogen: 250
+  minPotassium: 120
+  maxPotassium: 250
+  minPhosphorus: 30
+  maxPhosphorus: 80
+  minZinc: 0.5
+  maxZinc: 2
+  minSulfur: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0.5
+  maxBoron: 1
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 5
+  maxOrganicHorizonThick: 10
+--- !u!222 &456750760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456750754}
+  m_CullTransparentMesh: 1
 --- !u!1 &495629945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,11 +3956,9 @@ GameObject:
   - component: {fileID: 546457074}
   - component: {fileID: 546457076}
   - component: {fileID: 546457075}
-  - component: {fileID: 546457077}
-  - component: {fileID: 546457078}
   m_Layer: 5
   m_Name: Wheat
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3896,56 +4079,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546457073}
   m_CullTransparentMesh: 1
---- !u!114 &546457077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546457073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: 0
-  minpH: 6.4
-  maxpH: 14
-  drainage: 1
-  minNitrogen: 150
-  maxNitrogen: 200
-  minPotassium: 30
-  maxPotassium: 70
-  minPhosphorus: 100
-  maxPhosphorus: 150
-  minZinc: 0
-  maxZinc: 1000
-  minSulfur: 20
-  maxSulfur: 30
-  minManganese: 0
-  maxManganese: 1000
-  minBoron: 0
-  maxBoron: 1000
-  minIron: 0
-  maxIron: 1000
-  minOrganicHorizonThick: 15
-  maxOrganicHorizonThick: 30
---- !u!114 &546457078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546457073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Wheat to grow, it needs concentration of N: 150-200 kg/ha, K: 30-70
-    kg/ha, P: 100-150 kg/ha and S: 20-30 mg/kg. Soil with Pb higher than 100-300
-    mg/kg and Cd higher than 3-8 mg/kg is toxic to Wheat. It needs well-drained soil,
-    with pH > 6.4 and Organic Horizon Thickness 15-30 cm.'
 --- !u!1 &553286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,11 +6522,9 @@ GameObject:
   - component: {fileID: 886835686}
   - component: {fileID: 886835688}
   - component: {fileID: 886835687}
-  - component: {fileID: 886835689}
-  - component: {fileID: 886835690}
   m_Layer: 5
   m_Name: Soybeans
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6514,57 +6645,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886835685}
   m_CullTransparentMesh: 1
---- !u!114 &886835689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886835685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: 0
-  minpH: 6.3
-  maxpH: 6.5
-  drainage: 1
-  minNitrogen: 20
-  maxNitrogen: 40
-  minPotassium: 60
-  maxPotassium: 120
-  minPhosphorus: 40
-  maxPhosphorus: 80
-  minZinc: 20
-  maxZinc: 50
-  minSulfur: 0
-  maxSulfur: 1000
-  minManganese: 20
-  maxManganese: 50
-  minBoron: 0
-  maxBoron: 1000
-  minIron: 50
-  maxIron: 100
-  minOrganicHorizonThick: 2.5
-  maxOrganicHorizonThick: 3.8
---- !u!114 &886835690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886835685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Soybeans to grow, they need concentration of N: 20-40 kg/ha, K:
-    60-120 kg/ha, P: 40-80 kg/ha, Mn: 20-50 mg/kg, Fe: 50-100 mg/kg and Zn: 20-50
-    mg/kg.  Soil with Pb higher than 30-50 mg/kg and Cd higher than 3-5 mg/kg is
-    toxic to Soybeans. They need well-drained soil, with pH between 6,3-6,5 and Organic
-    Horizon Thickness 2,5-3,8 cm.'
 --- !u!1 &900983340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7278,10 +7358,9 @@ GameObject:
   - component: {fileID: 1076257384}
   - component: {fileID: 1076257386}
   - component: {fileID: 1076257385}
-  - component: {fileID: 1076257388}
   m_Layer: 5
   m_Name: Pumpkins
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7402,23 +7481,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076257383}
   m_CullTransparentMesh: 1
---- !u!114 &1076257388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076257383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Pumpkins to grow, they need concentration of N: 100-200 kg/ha, K:
-    80-150 kg/ha, P: 30-80 kg/ha, Mn: 20-50 mg/kg, B: 0.5-2.0 mg/kg and Zn: 20-40
-    mg/kg.  Soil with Pb higher than 30-50 mg/kg and Cd higher than 3-5 mg/kg is
-    toxic to Pumpkins. They need sandy soil, with pH around 5,7 and Organic Horizon
-    Thickness around 2,54 cm.'
 --- !u!1 &1098744335
 GameObject:
   m_ObjectHideFlags: 0
@@ -9067,7 +9129,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0bdbfaf11d9d4c439c61655922e674a, type: 3}
   m_PrefabInstance: {fileID: 1221258428}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1263617327
+--- !u!1 &1236575431
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9075,45 +9137,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1263617328}
-  - component: {fileID: 1263617330}
-  - component: {fileID: 1263617329}
+  - component: {fileID: 1236575432}
+  - component: {fileID: 1236575437}
+  - component: {fileID: 1236575436}
+  - component: {fileID: 1236575435}
+  - component: {fileID: 1236575434}
+  - component: {fileID: 1236575433}
   m_Layer: 5
-  m_Name: tut_text
-  m_TagString: Untagged
+  m_Name: Soybeans Image
+  m_TagString: Crop Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1263617328
+--- !u!224 &1236575432
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263617327}
+  m_GameObject: {fileID: 1236575431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1202248258}
+  m_Father: {fileID: 1957140246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 67}
-  m_SizeDelta: {x: 500, y: 250}
+  m_AnchoredPosition: {x: -122.4, y: -19.9}
+  m_SizeDelta: {x: 82, y: 82}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1263617329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263617327}
+  m_GameObject: {fileID: 1236575431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -9194,12 +9258,130 @@ MonoBehaviour:
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1263617330
+  m_Sprite: {fileID: 21300000, guid: 2e989a6ea4ba39c4b88c72cc85c1dfd7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1236575434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236575431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1236575433}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1236575436}
+        m_TargetAssemblyTypeName: Crop, Assembly-CSharp
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1236575435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236575431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: 'For Soybeans to grow, they need concentration of N: 20-40 kg/ha, K:
+    60-120 kg/ha, P: 40-80 kg/ha, Mn: 20-50 mg/kg, Fe: 50-100 mg/kg and Zn: 20-50
+    mg/kg.  Soil with Pb higher than 30-50 mg/kg and Cd higher than 3-5 mg/kg is
+    toxic to Soybeans. They need well-drained soil, with pH between 6,3-6,5 and Organic
+    Horizon Thickness 2,5-3,8 cm.'
+--- !u!114 &1236575436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236575431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropIndex: 0
+  minpH: 6.3
+  maxpH: 6.5
+  drainage: 1
+  minNitrogen: 20
+  maxNitrogen: 40
+  minPotassium: 60
+  maxPotassium: 120
+  minPhosphorus: 40
+  maxPhosphorus: 80
+  minZinc: 20
+  maxZinc: 50
+  minSulfur: 0
+  maxSulfur: 1000
+  minManganese: 20
+  maxManganese: 50
+  minBoron: 0
+  maxBoron: 1000
+  minIron: 50
+  maxIron: 100
+  minOrganicHorizonThick: 2.5
+  maxOrganicHorizonThick: 3.8
+--- !u!222 &1236575437
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263617327}
+  m_GameObject: {fileID: 1236575431}
   m_CullTransparentMesh: 1
 --- !u!1 &1267389319
 GameObject:
@@ -9212,10 +9394,9 @@ GameObject:
   - component: {fileID: 1267389320}
   - component: {fileID: 1267389322}
   - component: {fileID: 1267389321}
-  - component: {fileID: 1267389324}
   m_Layer: 5
   m_Name: Carrot
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9336,23 +9517,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267389319}
   m_CullTransparentMesh: 1
---- !u!114 &1267389324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267389319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Carrots to grow, they need concentration of N: 80-150 kg/ha, K:
-    100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg and Zn: 10-30
-    mg/kg. Soil with Pb higher than 20-50 mg/kg, As higher than 0.2 mg/kg and Cd
-    higher than 0,5-1 mg/kg is toxic to Carrots. They need sandy soil, with pH between
-    6-7 and Organic Horizon Thickness 5-10 cm.'
 --- !u!1001 &1283984137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10053,7 +10217,7 @@ GameObject:
   - component: {fileID: 1406415035}
   m_Layer: 5
   m_Name: Barley
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11043,10 +11207,9 @@ GameObject:
   - component: {fileID: 1563268271}
   - component: {fileID: 1563268273}
   - component: {fileID: 1563268272}
-  - component: {fileID: 1563268275}
   m_Layer: 5
   m_Name: Lettuce
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11167,23 +11330,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563268270}
   m_CullTransparentMesh: 1
---- !u!114 &1563268275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563268270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Lettuce to grow, they need concentration of N: 100-200 kg/ha, K:
-    100-150 kg/ha, P: 30-50 kg/ha, Mn: 20-50 mg/kg, B: 0.5-1.0 mg/kg and Zn: 20-40
-    mg/kg.  Soil with Pb higher than 20-50 mg/kg and Cd higher than 0,5-1 mg/kg is
-    toxic to Lettuce. It needs sandy soil , with pH between 6-7 and Organic Horizon
-    Thickness between 5-10 cm.'
 --- !u!1001 &1564289188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11754,10 +11900,9 @@ GameObject:
   - component: {fileID: 1651327154}
   - component: {fileID: 1651327156}
   - component: {fileID: 1651327155}
-  - component: {fileID: 1651327158}
   m_Layer: 5
   m_Name: Corn
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11878,22 +12023,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651327153}
   m_CullTransparentMesh: 1
---- !u!114 &1651327158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651327153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Corn to grow, it needs concentration of N: 150-250 kg/ha, K: 80-150
-    kg/ha, P: 50-80 kg/ha, Mn: 20-50 mg/kg and Zn: 20-50 mg/kg.  Soil with Pb higher
-    than 30-50 mg/kg and Cd higher than 3-8 mg/kg is toxic to Corn. It needs well-drained
-    soil, with pH between 6-6,5 and Organic Horizon Thickness 3,8-12 cm.'
 --- !u!1 &1691290325
 GameObject:
   m_ObjectHideFlags: 0
@@ -12890,6 +13019,190 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952776061}
   m_CullTransparentMesh: 1
+--- !u!1 &1952853517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1952853518}
+  - component: {fileID: 1952853523}
+  - component: {fileID: 1952853522}
+  - component: {fileID: 1952853521}
+  - component: {fileID: 1952853520}
+  - component: {fileID: 1952853519}
+  m_Layer: 5
+  m_Name: Wheat Image
+  m_TagString: Crop Information
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1952853518
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957140246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -513, y: -19.9}
+  m_SizeDelta: {x: 82, y: 82}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1952853519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 50bc43f30f6039d409a3b629947fd321, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1952853520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1952853519}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1952853522}
+        m_TargetAssemblyTypeName: Crop, Assembly-CSharp
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1952853521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropInfo: 'For Wheat to grow, it needs concentration of N: 150-200 kg/ha, K: 30-70
+    kg/ha, P: 100-150 kg/ha and S: 20-30 mg/kg. Soil with Pb higher than 100-300
+    mg/kg and Cd higher than 3-8 mg/kg is toxic to Wheat. It needs well-drained soil,
+    with pH > 6.4 and Organic Horizon Thickness 15-30 cm.'
+--- !u!114 &1952853522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cropIndex: 0
+  minpH: 6.4
+  maxpH: 14
+  drainage: 1
+  minNitrogen: 150
+  maxNitrogen: 200
+  minPotassium: 30
+  maxPotassium: 70
+  minPhosphorus: 100
+  maxPhosphorus: 150
+  minZinc: 0
+  maxZinc: 1000
+  minSulfur: 20
+  maxSulfur: 30
+  minManganese: 0
+  maxManganese: 1000
+  minBoron: 0
+  maxBoron: 1000
+  minIron: 0
+  maxIron: 1000
+  minOrganicHorizonThick: 15
+  maxOrganicHorizonThick: 30
+--- !u!222 &1952853523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952853517}
+  m_CullTransparentMesh: 1
 --- !u!1 &1957140245
 GameObject:
   m_ObjectHideFlags: 0
@@ -12922,15 +13235,18 @@ RectTransform:
   m_Children:
   - {fileID: 726921843}
   - {fileID: 546457074}
+  - {fileID: 1952853518}
   - {fileID: 1406415031}
   - {fileID: 1651327154}
   - {fileID: 789634914}
   - {fileID: 886835686}
+  - {fileID: 1236575432}
   - {fileID: 1076257384}
   - {fileID: 1999044160}
   - {fileID: 1563268271}
   - {fileID: 620670253}
   - {fileID: 1994653816}
+  - {fileID: 456750755}
   - {fileID: 2107717100}
   - {fileID: 1267389320}
   - {fileID: 191688473}
@@ -12990,11 +13306,9 @@ GameObject:
   - component: {fileID: 1994653816}
   - component: {fileID: 1994653818}
   - component: {fileID: 1994653817}
-  - component: {fileID: 1994653819}
-  - component: {fileID: 1994653820}
   m_Layer: 5
   m_Name: Sugarcane
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13115,57 +13429,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994653815}
   m_CullTransparentMesh: 1
---- !u!114 &1994653819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994653815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d0130500ac7054980259aa3759c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropIndex: 0
-  minpH: 5.5
-  maxpH: 6.5
-  drainage: 3
-  minNitrogen: 150
-  maxNitrogen: 250
-  minPotassium: 120
-  maxPotassium: 250
-  minPhosphorus: 30
-  maxPhosphorus: 80
-  minZinc: 0.5
-  maxZinc: 2
-  minSulfur: 0
-  maxSulfur: 1000
-  minManganese: 20
-  maxManganese: 50
-  minBoron: 0.5
-  maxBoron: 1
-  minIron: 50
-  maxIron: 100
-  minOrganicHorizonThick: 5
-  maxOrganicHorizonThick: 10
---- !u!114 &1994653820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994653815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9730045965da84aa0df2ffc6ff4ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cropInfo: 'For Sugarcane to grow, it needs concentration of N: 150-250 kg/ha, K:
-    120-250 kg/ha, P: 30-80 kg/ha, Mn: 20-50 mg/kg, B: 0,5-1 mg/kg, Fe: 50-100 mg/kg
-    and Zn: 0,5-2 mg/kg.  Soil with Pb higher than 10-20 mg/kg and Cd higher than
-    0,5-1 mg/kg is toxic to Sugarcane. It needs silt soil with pH between 5,5-6,5
-    and Organic Horizon Thickness 5-10 cm.'
 --- !u!1 &1999044159
 GameObject:
   m_ObjectHideFlags: 0
@@ -13443,7 +13706,7 @@ GameObject:
   - component: {fileID: 2107717104}
   m_Layer: 5
   m_Name: Rice
-  m_TagString: Crop Information
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
